@@ -1,0 +1,252 @@
+/* body */
+
+* {
+	 box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+}
+
+body{
+
+}
+
+nav{
+
+}
+
+/* .active{
+	text-decoration: underline;
+} */
+
+section{
+
+}
+div.container{
+  width: 70%;
+  margin: 0 auto;
+  /* padding: */
+}
+
+/* div.container-textblock{
+  width: 800px;
+} */
+
+/* typography */
+div.menu-bar{
+  font-family: 'Gravity-regular';
+  font-size: 2rem;
+  text-align: right;
+	width: 90%;
+}
+
+.button-2{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	float: right;
+	color: #BA808C;
+	padding: 10px;
+	text-decoration: none;
+}
+
+section.solution{
+	background-color: #A5EDDD;
+	width: 50%;
+}
+
+div.pinterest-card{
+	background-color: white;
+	padding: 10px;
+	box-shadow: 0px 3px 5px #888888;
+	border-radius: 16px;
+	margin-left: 10rem;
+	padding: 30px;
+	height: 500px;
+	width: 400px;
+}
+
+h1.my-name{
+  font-family: 'Gravity-book';
+  font-size: 9.0rem;
+  color: #284078;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Gravity-book';
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+h2.percent{
+  /* color: #fff; */
+  font-family: 'Gravity-bolditalic';
+  text-align: left; /*will have to figure out this grid situation*/
+}
+
+h3{
+  color: #000;
+  font-family: 'Gravity-book';
+  font-size: 3rem;
+  line-height: 120%;
+  text-align: center;
+}
+
+h3.regular{
+  color: #000;
+  font-family: 'Gravity-regular';
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+h3.ps{
+  color: #000;
+  font-family: 'Gravity-book';
+  font-size: 2.8rem;
+  text-align: left;
+}
+
+span.label{
+  color: #284078;
+  font-family: 'Gravity-regular';
+  font-size: 5rem;
+  text-align: center; /* why isnt this showing up in the browser? */
+}
+
+span.conclusion-label{
+  color: #A5EDDD;
+  font-family: 'Gravity-regular';
+  font-size: 5rem;
+  text-align: center;
+}
+
+h4{
+  color: #14B9B2;
+  font-family: 'Gravity-book';
+  font-size: 2.8rem;
+  text-align: left;
+}
+
+h4.white-text{
+  color: #ccc; /* color: #fff; */
+}
+
+h4.black-text{
+  color: #000;
+}
+
+li.RDT{
+  color: #000;
+  font-family: 'Gravity-book';
+  font-size: 2.13rem;
+  line-height: 130%;
+  text-align: center;
+}
+
+p.intro-text-body{
+  color: #000;
+  font-family: 'Gravity-book';
+  font-size: 2.13rem;
+  line-height: 140%;
+  text-align: left;
+}
+
+li.survey{
+  color: #31397E;
+  font-family: 'Gravity-italic';
+  font-size: 2.3rem;
+  line-height: 160%;
+  text-align: left;
+}
+
+p.case-study-text{
+  color: #000;
+  font-family: 'Gravity-book';
+  font-size: 1.8rem;
+  line-height: 130%;
+  text-align: left;
+}
+
+p.case-study-text-blue{
+  color: #284078;
+  font-family: 'Gravity-book';
+  font-size: 1.8rem;
+  line-height: 130%;
+  text-align: left;
+}
+
+p.case-study-text-white{
+  color: #ccc; /* change to white */
+  font-family: 'Gravity-book';
+  font-size: 1.8rem;
+  line-height: 130%;
+  text-align: left;
+}
+
+p.survey-1{
+  color: #000;
+  font-family: 'Gravity-bold';
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+p.percent-caption{ /* how to turn these into a grid? */
+  color: #000;
+  font-family: 'Gravity-italic';
+  font-size: 2.3rem;
+  line-height: 120%;
+  text-align: left;
+}
+
+a.button{
+  background-color: #14B9B2;
+  border-radius: 8px;
+  color: #fff;
+  font-family: 'Gravity-book';
+  font-size: 1.8rem;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover{
+	background-color: #1ADAD2;
+	color: #fff;
+}
+
+p.persona-titles{
+  color: #000;
+  font-family: 'Gravity-bookitalic';
+  font-size: 2.13rem;
+  line-height: 130%;
+  text-align: center;
+}
+
+p.regular-bold-title{
+  color: #000;
+  font-family: 'Gravity-bold';
+  font-size: 1.8rem;
+  line-height: 130%;
+  text-align: left;
+}
+
+p.img-label{
+  color: #000;
+  font-family: 'Gravity-book';
+  font-size: 1.6rem;
+}
+
+ol{
+  color: #000;
+  font-family: 'Gravity-bookitalic';
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+
+p{
+  color: #BA808C;
+  font-family: 'Gravity-regular';
+  font-size: 1.5rem;
+}
