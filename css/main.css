@@ -13,9 +13,18 @@ div.container{
   background-color: #284078;
 }
 
-/* .container2:before{
+.container2:before{
+  background-image: url(blue-curve.svg);
+  position: absolute;
+} 
 
-} */
+.left-content{
+  width: 100%;
+}
+
+.right-content{
+  width: 100%;
+}
 
 /* div.container-textblock{
   width: 800px;
@@ -90,6 +99,9 @@ img.landing{
   width: 100%;
 }
 
+.left-content{
+  text-align: center;
+}
 a.button{
   background-color: #fff;
   border-radius: 8px;
@@ -99,11 +111,11 @@ a.button{
   font-size: 1.8rem;
   margin: 0 auto;
   padding: 15px 35px;
-  justify-content: center;
   text-decoration: none;
+  width: 160px;
 }
   /* display: inline; */
-  /* text-align: center; */
+  /*  */
   /* width: 160px; */
 
 
@@ -128,9 +140,9 @@ ul.social-bar{
   justify-content: center;
 }
 
-/* a{
+a{
   padding: 1rem 2rem;
-} */
+} 
 
 p{
   color: #BA808C;
@@ -140,4 +152,20 @@ p{
   float: left;
   text-align: center;
   width: 100%;
+}
+
+@media screen and (min-width: 775px) {
+  
+  .left-content {
+    float: left;
+    /* padding: 5rem 0 ; */
+    width: 50%;
+    /* background-color: #284078; */
+  }
+  .right-content {
+    float: left;
+    width: 50%;
+    /* background-color: #284078; */
+  }
+  
 }
