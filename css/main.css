@@ -17,15 +17,11 @@ html{
 }
 
 .container{
-  width: 87%;
+  width: 95%;
   margin: 0 auto;
 }
 
-svg.curve {
-  position: absolute;
-  top: -21vw;
-  width: 101vw;
-}
+
 
 
 /* .container2:before{
@@ -68,7 +64,7 @@ svg.curve {
 }
 .menu-bar{
   display: inline;
-  font-family: 'Gravity-regular';
+  font-family: 'Gravity-book';
   font-size: 1.6rem;
   color: #FF7C84;
   text-align: center;
@@ -131,7 +127,7 @@ h4{
   font-family: 'Gravity-light';
   font-size: 5.3rem;
   text-align: center;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 
 }
 
@@ -139,13 +135,13 @@ p.cubby-description{
   color: #fff;
   font-size: 1.9rem;
   font-family: 'Gravity-light';
-  line-height: 120%;
+  line-height: 135%;
   text-align: center;
   padding-bottom: 4rem;
 }
 .mobile-landing{
   height: auto;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .desktop-landing{
@@ -155,24 +151,35 @@ p.cubby-description{
 .case-studies{
   background-color:  #284078;
   /* #6262C3 */
-  padding: 5rem 0 0 0;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
   position: relative;
+  width: 100%;
+  z-index: 1;
 }
 
-.case-studies:before{
+svg.curve {
   position: absolute;
-  top: -80px;
-  height: 80px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: '';
-  background-image: url(../images/purple-curve.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-size: 100% 80px; */
-  width: 100%;
+  top: -21vw;
+  width: 101vw;
+  z-index: 2;
 }
+
+.arrow{
+  /* margin: 0 48%;
+  padding-top: 5rem;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  display: inline-block; */
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  z-index: 3;
+}
+.case-studies:before{
+}
+
 
 .left-content{
   text-align: center;
@@ -198,16 +205,6 @@ a.button{
   width: 160px;
 }
 
-.arrow{
-  /* margin: 0 48%;
-  padding-top: 5rem;
-  text-align: center;
-  justify-content: center;
-  vertical-align: middle;
-  display: inline-block; */
-  display: block;
-  margin: 0 auto;
-}
 
 p.two{
   color: #FF7C84;
@@ -229,8 +226,8 @@ ul.social-bar{
   justify-content: center;
 }
 
-a{
-  padding: 1rem 2rem;
+a {
+  padding: 1rem 1.4rem;
 } 
 
 p{
@@ -256,7 +253,7 @@ p{
 
   nav{
       display: flex;
-      padding: 2rem 0;
+      padding: 2rem 0 4rem 0;
       /* align-items: center; */
       justify-content: space-between;
       flex-direction: row;
@@ -264,9 +261,10 @@ p{
     
   .wrapper{
       display: grid;
-      grid-gap: 10px;
-      grid-template-columns: 300px 700px;
+      grid-gap: 90px;
+      grid-template-columns: 1fr 2fr;
       /* background-color: #284078; */
+      align-items: center;
   }
 
   .left-content {
@@ -308,7 +306,8 @@ p{
     display: block;
   }
 
- 
+  p.cubby-description{
+    padding-bottom: 5.5rem;
 }
 @media screen and (min-width: 440px){
   .mobile-landing{
