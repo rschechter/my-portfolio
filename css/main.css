@@ -1,105 +1,58 @@
 html{
+  background-color: #fff;
   font-size: 10px;
   /* background-color: #FAEFED; */
-  background-color: #fff;
+}
+
+/* nav bar - across all pages */
+.container{
+  margin: 0 auto;
+  width: 90%;
+}
+
+nav{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.logo {
+  padding: 2rem 0;
 }
 
 .menu-bar li {
   display: inline;
+  padding-top: 1.4rem;
 }
 
 .menu-bar li a {
-  color: #FF7C84;
-  text-decoration: none;
-}
-.menu-bar li a:hover{
-  color: #FFA8AD;
-}
-
-.container{
-  width: 95%;
-  margin: 0 auto;
-}
-
-
-
-
-/* .container2:before{
-  background-image: url(blue-curve.svg);
-  position: absolute;
-}  */
-
-.left-content{
-  width: 100%;
-}
-
-.right-content{
-  width: 100%;
-}
-
-/* div.container-textblock{
-  width: 800px;
-} */
-
-/* typography */
-/* div.menu-bar{
-  font-family: 'Gravity-regular';
-  font-size: 2rem;
-  text-align: right;
-	width: 90%;
-}
-
-.button-2{
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	float: right;
-	color: #BA808C;
-	padding: 10px;
-	text-decoration: none;
-} */
-
-.logo{
-    padding: 2rem 0;
-}
-.menu-bar{
-  display: inline;
+  color: #D02E77;
   font-family: 'Gravity-book';
   font-size: 1.6rem;
-  color: #FF7C84;
-  text-align: center;
-  width: 89%;
-  }
-
-
-nav{
-  display: flex;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  padding-top: 1.4rem;
+  text-decoration: none;
 }
 
-h1{
+.menu-bar li a:hover{
+  color: #D02E77;
+  text-decoration: underline;
+}
+
+/* landing page body */
+
+h1{ /* Hi, I'm Rachel! */
+  color: #D02E77;
   font-family: 'Gravity-bold';
   font-size: 4.5rem;
-  color: #FF7C84;
+  padding-top: 7rem;
   text-align: left;
-  padding-top: 30px;
 }
 
-/* h2{
-  color: #BA808C;
-  font-family: 'Gravity-light';
-  font-size: 2.7rem;
-  line-height: 3rem;
-  padding: 2rem 0;
-  text-align: left;
-} */
-
-.slogan{
-  color: #FF7C84;
+h2{ /* slogan */
+  color: #D02E77;
   font-family: 'Gravity-light';
   font-size: 2.7rem;
   line-height: 3rem;
@@ -111,48 +64,26 @@ br{
   display: none;
 }
 
-h3{
-  color: #FF7C84;
+h3{ /* currently based in NYC */
+  color: #D02E77;
   /* color: #BA808C; */
   font-family: 'Gravity-light';
   font-size: 2.1rem;
   line-height: 120%;
+  padding-bottom: 10rem;
   padding-top: 2rem;
-  padding-bottom: 20rem;
   text-align: left;
 }
 
-h4{
-  color: #fff;
-  font-family: 'Gravity-light';
-  font-size: 5.3rem;
-  text-align: center;
-  /* padding-top: 5rem; */
-
-}
-
-p.cubby-description{
-  color: #fff;
-  font-size: 1.9rem;
-  font-family: 'Gravity-light';
-  line-height: 135%;
-  text-align: center;
-  padding-bottom: 4rem;
-}
-.mobile-landing{
-  height: auto;
-  /* width: 100%; */
-}
-
-.desktop-landing{
-  display: none;
-}
-
+/* general middle section */
 .case-studies{
   background-color:  #284078;
-  /* #6262C3 */
-  padding-top: 2rem;
-  padding-bottom: 5rem;
+  background-image: url(../images/curve-2.svg);
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  background-position: center -14.75vw;
+  padding-bottom: 3rem;
+  padding-top: 10vw;
   position: relative;
   width: 100%;
   z-index: 1;
@@ -166,36 +97,41 @@ svg.curve {
 }
 
 .arrow{
-  /* margin: 0 48%;
-  padding-top: 5rem;
-  text-align: center;
-  justify-content: center;
-  vertical-align: middle;
-  display: inline-block; */
   display: block;
   margin: 0 auto;
   padding-bottom: 15px;
   z-index: 3;
 }
-.case-studies:before{
-}
 
+/* left content */
 
-.left-content{
+.left-content{ /* section including "Cubby", description and button */
   text-align: center;
   width: 100%;
-  /* margin: 0 2rem; */
 }
 
-.right-content{
+.project-name{
+  color: #fff;
+  font-family: 'Gravity-light';
+  font-size: 5.3rem;
   text-align: center;
-  width: 100%;
+  padding-top: 5rem;
+}
+
+.cubby-description{
+  color: #fff;
+  font-size: 1.9rem;
+  font-family: 'Gravity-light';
+  line-height: 135%;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+  text-align: center;
 }
 
 a.button{
   background-color: #fff;
   border-radius: 8px;
-  color: #6c7a99; 
+  color: #284078; 
   display: inline-block;
   font-family: 'Gravity-book';
   font-size: 1.8rem;
@@ -205,91 +141,149 @@ a.button{
   width: 160px;
 }
 
+/* right content */
 
-p.two{
-  color: #FF7C84;
+.right-content{ /* section Cubby image */
+  text-align: center;
+  width: 100%; 
+}
+.mobile-landing{
+  height: auto;
+  padding-top: 30px;
+   /* width: 100%; */
+}
+
+.desktop-landing{
+  display: none;
+}
+
+
+/* about page body */
+
+.about-image{
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.about{
+  margin: 0 2rem;
+}
+
+#quote{
+  font-family: 'Gravity-italic';
+  font-size: 2.4rem;
+  line-height: 130%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#speaker{
+    font-family: 'Gravity-regular';
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    text-align: right;
+}
+
+.section-tagline{
+    font-family: 'Gravity-italic';
+    font-size: 2.1rem;
+    line-height: 130%;
+    padding-top: 2rem;
+}
+
+.about-body-copy{
+    font-family: 'Gravity-book';
+    font-size: 1.8rem;
+    text-align: left;
+    padding: 1rem 0;
+    line-height: 140%;
+}
+
+/* footer - across all pages */
+
+#contact-footer{
+  color: #D02E77;
   font-family: 'Gravity-book';
   font-size: 2.8rem;
-  padding-top: 8rem;
   padding-bottom: .25rem;
-}
-footer{
-  margin: 0 auto;
+  padding-top: 8rem;
+  text-align: center;
   width: 100%;
 }
 
 ul.social-bar{
   display: flex;
+  justify-content: center;
+  margin: 0 auto;
   padding: 3rem 0;
   width: 100%;
-  margin: 0 auto;
-  justify-content: center;
 }
 
-a {
+a { /* social icons */
   padding: 1rem 1.4rem;
 } 
 
-p{
-  color: #FF7C84;
+#copywrite-info{
+  color: #D02E77;
   /* #BA808C */
   font-family: 'Gravity-regular';
   font-size: 1.2rem;
   padding: 2rem 0;
-  float: left;
   text-align: center;
   width: 100%;
 }
 
 @media screen and (min-width: 775px) {
+  
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0 4rem 0;
+  }
 
   .menu-bar{
+    color: #D02E77;
     display: inline;
-    font-family: 'Gravity-regular';
+    font-family: 'Gravity-book';
     font-size: 1.6rem;
-    color: #FF7C84;
     text-align: right;
   }
 
-  nav{
-      display: flex;
-      padding: 2rem 0 4rem 0;
-      /* align-items: center; */
-      justify-content: space-between;
-      flex-direction: row;
-    }
+/* landing page MQ */
+   .wrapper{
+    align-items: center;
+    display: grid;
+    grid-gap: 90px;
+    grid-template-columns: 1fr 2fr; 
+    background-color: #284078; 
+   }
+
+  /* .left-content {
     
-  .wrapper{
-      display: grid;
-      grid-gap: 90px;
-      grid-template-columns: 1fr 2fr;
-      /* background-color: #284078; */
-      align-items: center;
+  } */
+
+  .project-name{
+    text-align: right;
+    padding-top: 0rem;
   }
 
-  .left-content {
-    /* float: left; */
-    /* width: 40%; */
-    /* padding: 100px 0; */
-    /* margin: 0 7rem 0 0; */
-    /* vertical-align: center; */
-  }
-  .right-content {
-    /* float: left; */
-    /* width: 100%; */
-    /* padding: 100px 0; */
-  }
-
-  h4{
+  .cubby-description{
+    padding-bottom: 5.5rem;
     text-align: right;
   }
 
-  p.cubby-description{
-    text-align: right;
+  br{
+    display: block;
   }
 
   a.button{
     float: right;
+  }
+
+  .right-content {
+  
   }
 
   .mobile-landing{
@@ -302,19 +296,44 @@ p{
     width: 100%;
   }
 
-  br{
+/* about page MQ */
+  .about-image{
     display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+  /* .wrapper-2{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  } */
+  .about{
+    margin: 0 auto;
+    width: 70%;
   }
 
-  p.cubby-description{
-    padding-bottom: 5.5rem;
+  #quote{
+    font-size: 3rem;
+  }
+
+  #speaker{
+    font-size: 2.5rem;
+  }
 }
+
+/* landing page MQ */
 @media screen and (min-width: 440px){
   .mobile-landing{
     width: initial;
   }
 }
 
+/* about page MQ */
+@media screen and (min-width: 1150px){
+.about{
+    margin: 0 auto;
+    width: 50%;
+  }
+}
 /* @media screen and (min-width: 1115px){
   br-2{
     display: block;
