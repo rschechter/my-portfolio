@@ -302,13 +302,70 @@ a { /* social icons */
     margin: 0 auto;
     width: 80%;
   }
-  /* .wrapper-2{
+
+  .wrapper-2{
     display: grid;
     grid-template-columns: 1fr 3fr;
-  } */
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    
+  }
+
   .about{
     margin: 0 auto;
     width: 70%;
+  }
+  .about-body-copy{
+    padding: 0;
+  }
+
+  .section-tagline{
+    padding-top: 0;
+  }
+
+  .one{
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .two{
+    grid-column-start: 1;
+    grid-row-start: 3;
+    padding-top: 1rem;
+  }
+
+  .three{
+    grid-column-start: 1;
+    grid-row-start: 4;
+    padding-top: 1rem;
+  }
+
+  .four{
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .five{
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .six{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    padding-top: 1rem;
+  }
+
+  .seven{
+    grid-column-start: 2;
+    grid-row-start: 4;
+    padding-top: 1rem;
+
+  }
+
+  .eight{
+    grid-column-start: 2;
+    grid-row-start: 5;
   }
 
   #quote{
@@ -331,7 +388,7 @@ a { /* social icons */
 @media screen and (min-width: 1150px){
 .about{
     margin: 0 auto;
-    width: 50%;
+    width: 70%;
   }
 }
 /* @media screen and (min-width: 1115px){
