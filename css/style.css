@@ -1,252 +1,1167 @@
-/* body */
-
-* {
-	 box-sizing: border-box;
-}
-
 html{
+  background-color: #fff;
   font-size: 10px;
+  /* background-color: #FAEFED; */
 }
 
-body{
-
+/* nav bar - across all pages */
+.container{
+  margin: 0 auto;
+  width: 95%;
 }
 
 nav{
-
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  
 }
 
-/* .active{
-	text-decoration: underline;
-} */
-
-section{
-
-}
-div.container{
-  width: 70%;
-  margin: 0 auto;
-  /* padding: */
+#logo{
+  padding: 2rem 0;
 }
 
-/* div.container-textblock{
-  width: 800px;
-} */
-
-/* typography */
-div.menu-bar{
-  font-family: 'Gravity-regular';
-  font-size: 2rem;
-  text-align: right;
-	width: 90%;
+.menu-bar li {
+  display: inline;
+  padding-top: 1.4rem;
 }
 
-.button-2{
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	float: right;
-	color: #BA808C;
-	padding: 10px;
-	text-decoration: none;
-}
-
-section.solution{
-	background-color: #A5EDDD;
-	width: 50%;
-}
-
-div.pinterest-card{
-	background-color: white;
-	padding: 10px;
-	box-shadow: 0px 3px 5px #888888;
-	border-radius: 16px;
-	margin-left: 10rem;
-	padding: 30px;
-	height: 500px;
-	width: 400px;
-}
-
-h1.my-name{
+.menu-bar li a {
+  color: #D02E77;
   font-family: 'Gravity-book';
-  font-size: 9.0rem;
-  color: #284078;
-  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 1.4rem;
+  text-decoration: none;
 }
 
-h2{
+.menu-bar li a:hover{
+  color: #D02E77;
+  text-decoration: underline;
+}
+
+/* hero */
+
+#cubby-title{
+color: #284078;
+font-family: 'Gravity-book';
+font-size: 5rem;
+padding: 3rem 0 1.6rem 0;
+text-align: center;
+}
+
+#cubby-tag-line{
+color: #284078;
+font-family: 'Gravity-book';
+font-size: 2.13rem;
+padding-bottom: 2rem;
+text-align: center;
+}
+
+#mobile-hero{
+display: block;
+width: 100%;
+}
+
+#desktop-hero{
+display: none;
+}
+
+.cubby-description-2{
+color: #000;
+font-family: 'Gravity-book';
+font-size: 1.8rem;
+line-height: 125%;
+margin: 0 3rem;
+padding-bottom: 1rem;
+padding-top: 2rem;
+text-align: center;
+}
+
+.green-button{
+  background-color: #14B9B2;
+  border-radius: 8px;
+  color: #fff; 
+  display: block;
   font-family: 'Gravity-book';
-  font-size: 4.5rem;
+  font-size: 1.8rem;
+  line-height: 130%;
+  margin: 2rem auto; 
+  padding: 12px 35px;
   text-align: center;
+  text-decoration: none;
+  width: 240px; /*previous 160px*/
 }
 
-h2.percent{
-  /* color: #fff; */
-  font-family: 'Gravity-bolditalic';
-  text-align: left; /*will have to figure out this grid situation*/
+.roles-deliverables-tools{
+background-color: #C9EFED;
+}
+.rdt-titles{
+color: #000;
+font-family: 'Gravity-book';
+font-size: 2.8rem;
+padding: 3.5rem 0 1rem 0;
+text-align: center;
 }
 
-h3{
+.rdt{
   color: #000;
   font-family: 'Gravity-book';
-  font-size: 3rem;
-  line-height: 120%;
+  font-size: 1.8rem;
+  line-height: 140%;
   text-align: center;
 }
-
-h3.regular{
-  color: #000;
-  font-family: 'Gravity-regular';
-  font-size: 2.8rem;
-  text-align: center;
+.tools{
+  padding-bottom: 3rem;
 }
 
-h3.ps{
+.ps{
   color: #000;
   font-family: 'Gravity-book';
-  font-size: 2.8rem;
+  font-size: 3.4rem;
+  margin-left: 2rem;
+  padding: 3rem 0 1rem 0;
   text-align: left;
 }
 
-span.label{
-  color: #284078;
-  font-family: 'Gravity-regular';
-  font-size: 5rem;
-  text-align: center; /* why isnt this showing up in the browser? */
+.ps-text-body{
+  color: #000;
+  font-family: 'Gravity-book';
+  font-size: 1.8rem;
+  line-height: 150%;
+  margin: 0 2rem;
+  padding-bottom: 2rem;
+  text-align: left;
 }
 
-span.conclusion-label{
-  color: #A5EDDD;
-  font-family: 'Gravity-regular';
-  font-size: 5rem;
+.solution{
+  background-color: #A5EDDD; 
+}
+
+.disc-mobile{
+  display: block;
+  width: 100%;
+}
+
+.disc-desktop{
+  display: none;
+}
+                                  /* Discovery Phase */
+
+.section-label{
+  color: #284078;
+  font-family: 'Gravity-book';
+  font-size: 3.5rem;
+  line-height: 120%;
+  padding-bottom: 4rem;
   text-align: center;
 }
-
+          /* User Survey */
 h4{
   color: #14B9B2;
   font-family: 'Gravity-book';
   font-size: 2.8rem;
+  margin: 0 2rem;
+  padding-bottom: 1.3rem;
   text-align: left;
 }
 
-h4.white-text{
-  color: #ccc; /* color: #fff; */
-}
-
-h4.black-text{
-  color: #000;
-}
-
-li.RDT{
-  color: #000;
-  font-family: 'Gravity-book';
-  font-size: 2.13rem;
-  line-height: 130%;
-  text-align: center;
-}
-
-p.intro-text-body{
-  color: #000;
-  font-family: 'Gravity-book';
-  font-size: 2.13rem;
-  line-height: 140%;
-  text-align: left;
-}
-
-li.survey{
-  color: #31397E;
-  font-family: 'Gravity-italic';
-  font-size: 2.3rem;
-  line-height: 160%;
-  text-align: left;
-}
-
-p.case-study-text{
+.case-study-text{
   color: #000;
   font-family: 'Gravity-book';
   font-size: 1.8rem;
-  line-height: 130%;
+  line-height: 140%;
+  margin: 0 2rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+.card-text{
+  color: #000;
+  font-family: 'Gravity-book';
+  font-size: 1.8rem;
+  line-height: 140%;
+  margin: 0 2rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+/* discovery section overlap */
+.disc-image-overlap{
+  position: relative;
+  width: 100%;
+}
+#disc-phase{
+  padding-bottom: 5rem;
+  position: absolute;
+  margin: 0 auto;
+  top: 55px;
+  width: 100%;
+}
+#user-survey{
+  margin: 0 2rem;
+  position: absolute;
+  top: 210px;
+  width: 100%;
+}
+
+#disc-phase-intro-body{
+  margin: 0 2rem;
+  position: absolute;
+  top: 250px;
+}
+
+/* survey questions */
+
+.survey-questions{
+  padding: 0 0 2.5rem 0;
+}
+li.survey{
+  color: #31397E;
+  font-family: 'Gravity-italic';
+  font-size: 1.8rem;
+  line-height: 160%;
+  padding: .7rem 0;
+  margin: 0 2rem;
   text-align: left;
 }
 
-p.case-study-text-blue{
+#survey-results-mobile{
+  display: block;
+  width: 100%;
+}
+
+#survey-results-desktop{
+  display: none;
+}
+.survey-results{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 35px;
+  grid-column-gap: 15px;
+  background-image: linear-gradient(#153055, #2B7093);
+}
+
+.percent-data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* when it should take up 2 vertical cells:
+grid-row-start: 2;
+grid-row-end: 4;  */
+
+/* grid-column-start: 2; to get it in the second column */ 
+
+.percent{
+  color: #fff;
+  font-family: 'Gravity-bookitalic';
+  font-size: 4rem;
+  text-align: left; /*will have to figure out this grid situation*/
+}
+.percent-caption{ /* how to turn these into a grid? */
+  color: #fff;
+  font-family: 'Gravity-lightitalic';
+  font-size: 2.3rem;
+  line-height: 120%;
+  text-align: center;
+}
+
+/* percentages */
+
+#num-56{
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 2;
+}
+/*
+#num-25{
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+#num-81{
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+*/
+#num-94{
+  grid-column-start: 2;
+  grid-row-start: 2;
+} 
+
+
+/* survey section overlap */
+
+.survey-image-overlap{
+  position: relative;
+  width: 100%;
+}
+
+#survey-caption{
+  color: white;
+  margin: 0 2rem;
+  /* position: absolute; */
+  /* top: 50px; */
+  font-family: 'Gravity-light';
+  font-size: 2rem;
+  line-height: 120%;
+  padding-top: 3rem;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#survey-button{
+  width: 207px;
+  grid-column-start: 1;
+  grid-column-end: 3
+}
+
+#user-personas{
+  padding-top: 5rem;
+}
+
+#user-personas-copy{
+  padding-bottom: 4rem;
+}
+
+.user-personas-intro{
+  background-color: #FAF6FF;
+}
+
+.persona-titles{
+background-color: #A5EDDD;
+color: #000;
+font-family: 'Gravity-bookitalic';
+font-size: 1.8rem;
+letter-spacing: .4px;
+line-height: 130%;
+padding: 2.5rem 3rem 10rem 3rem;
+text-align: center;
+}
+
+.regular-bold-title{
+  color: #000;
+  font-family: 'Gravity-bold';
+  font-size: 1.8rem;
+  line-height: 130%;
+  margin: 0 2rem;
+  padding-bottom: .6rem;
+  padding-top: 2rem;
+  text-align: left;
+}
+
+
+/* persona picture overlap */
+
+.persona-image-overlap{
+  position: relative;
+  width: 100%;
+}
+.marcus-samantha{
+ position: relative;
+ width: 150px;
+ height: 150px;
+ display: block;
+ top: -74px;       
+ margin: 0 auto; 
+}
+#marcus-samantha-summary{
+  margin-top: -4rem;
+}
+
+.personas{
+  padding-bottom: 3rem;
+}
+
+.blue-block{
+  background-color: #4F639A;;
+  padding: 2rem 0;
+}
+#after-personas{
+  color: white;
+  font-family: 'Gravity-light';
+  font-size: 1.8rem;
+  line-height: 140%;
+  margin: 0 2rem;
+  text-align: left;
+}
+
+#comp-analysis{
+  padding-top: 3rem;
+}
+
+.comp-analysis-cards{
+  background-color: #DCF8F2;
+  background-image: url(../images/ca-curve.svg);
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  background-position: center 0vw;
+  padding-bottom: 3rem;
+  position: relative;
+  width: 100%;
+}
+
+.card{
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 7px 2px rgba(0,0,0,0.2);
+  padding: 3rem 0;
+  margin: 2rem 2rem;
+  background-color: white;
+}
+
+
+
+/* info arch overlap */
+.info-arch-overlap{
+  position: relative;
+  width: 100%;
+}
+#info-arch{
+  margin: 0 2rem;
+  position: absolute;
+  top: 75px;
+}
+#user-stories-flows{
+  position: absolute;
+  top: 240px;
+}
+
+#info-arch-summary{
+  position: absolute;
+  top: 300px;
+}
+
+#info-arch-mobile{
+  width: 100%;
+}
+#info-arch-desktop{
+  display: none;
+}
+
+#stories-button{
+  position: relative;
+  top: -290px;
+}
+
+#flows-button{
+  position: relative;
+  top: -275px;
+}
+
+.wireframes{
+  padding: 3.75rem 0 3rem 0;
+  
+}
+.wireframes-main{
+  background-color: #FAF6FF;
+  background-image: url(../images/wf-curve.svg);
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  background-position: center 160.75rem;
+  padding-bottom: 1.15rem;;
+  position: relative;
+  width: 100%;
+  margin-top: -16rem;
+}
+
+#wf-label{
+  padding-top: 3rem;
+}
+.wireframes-image{
+  display: block;
+  width: 100%;
+}
+
+
+#wf-1{
+ margin-top: 2.5rem;
+}
+
+#mobile-wireframe-image{
+  display: block;
+  margin: 0 auto;
+}
+
+.img-label{
+  color: #000;
+  font-family: 'Gravity-book';
+  font-size: 1.6rem;
+  padding: .5rem 0 3rem 0;
+  text-align: center;
+  margin: 0 2rem;
+}
+
+#sketches-wireframes-button{
+  padding: 15px 30px;
+  width: 281px;
+}
+
+#user-testing-1{
+  padding-top: 5rem;
+}
+.user-testing-1{
+  padding-bottom: 10rem;
+}
+.cards-back{
+  background-color: #6B7CAA;
+  background-image: url(../images/ut1-curve.svg);
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  background-position: center 66.55rem;
+  padding-bottom: 14rem;
+  position: relative;
+  width: 100%;
+}
+.test-result-card{
+  background-color: #A5EDDD;
+  border-radius: 8px;
+  box-shadow: 0 0 10px .5px rgba(0,0,0,0.2);
+  padding: 3rem 0;
+  margin: 2rem 2rem;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -10rem;
+}
+.user-test-results{
+  text-align: center;
+  padding-bottom: 0;
+  color: #000;
+  font-family: 'Gravity-book';
+  font-size: 1.8rem;
+  line-height: 140%;
+  padding: 2rem 1rem;
+}
+
+/* Branding & Identity */
+
+#branding-mobile-back{
+  display: block;
+}
+#branding-desktop-back{
+  display: none;
+}
+
+/* overlap */
+.branding-overlap{
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+#branding-mobile-back{
+  position: relative;
+  width: 100%;
+  top: -25rem;
+  padding-bottom: 3rem;
+}
+
+#branding{
+  position: relative;
+  top: -70rem;
+}
+
+.branding-card-text{
   color: #284078;
   font-family: 'Gravity-book';
   font-size: 1.8rem;
   line-height: 130%;
   text-align: left;
-}
-
-p.case-study-text-white{
-  color: #ccc; /* change to white */
-  font-family: 'Gravity-book';
-  font-size: 1.8rem;
-  line-height: 130%;
-  text-align: left;
-}
-
-p.survey-1{
-  color: #000;
-  font-family: 'Gravity-bold';
-  font-size: 2.3rem;
-  text-align: center;
-}
-
-p.percent-caption{ /* how to turn these into a grid? */
-  color: #000;
-  font-family: 'Gravity-italic';
-  font-size: 2.3rem;
-  line-height: 120%;
-  text-align: left;
-}
-
-a.button{
-  background-color: #14B9B2;
+  background-color: #fff;
   border-radius: 8px;
-  color: #fff;
+  box-shadow: 0 0 10px .5px rgba(0,0,0,0.2);
+  padding: 1rem 1rem;
+  margin: 2rem 2rem;
+  position: absolute;
+  top: 5rem;
+}
+
+#i-decided{
+  margin-top: -36rem;
+  margin-bottom: 2rem;
+}
+#designing-logo-desktop{
+  display: none;
+}
+#designing-logo-mobile{
+  display: block;
+  width: 100%;
+  padding-bottom: 3rem;
+  opacity: 0.5;
+}
+
+/* overlap */
+
+.logo-overlap{
+  position: relative;
+  width: 100%;
+}
+#designing-logo{
+  position: absolute;
+  top: 77px;
+}
+.logo-card-text{
+  color: #284078;
   font-family: 'Gravity-book';
-  font-size: 1.8rem;
-  padding: 10px 40px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.button:hover{
-	background-color: #1ADAD2;
-	color: #fff;
-}
-
-p.persona-titles{
-  color: #000;
-  font-family: 'Gravity-bookitalic';
-  font-size: 2.13rem;
-  line-height: 130%;
-  text-align: center;
-}
-
-p.regular-bold-title{
-  color: #000;
-  font-family: 'Gravity-bold';
   font-size: 1.8rem;
   line-height: 130%;
   text-align: left;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px .5px rgba(0,0,0,0.2);
+  padding: 1rem 1rem;
+  margin: 2rem 2rem;
+  position: absolute;
+  top: 150px;
 }
 
-p.img-label{
-  color: #000;
-  font-family: 'Gravity-book';
-  font-size: 1.6rem;
+#logo-options-mobile{
+  display: block;
+  width: 100%;
+  padding-top: 1.7rem;
+}
+
+#logo-options-desktop{
+  display: none;
+}
+
+/* typeface */
+#typeface-mobile{
+  display: block;
+  margin: 0 auto;
+}
+
+#typeface-desktop{
+  display: none;
+}
+
+.typeface-back{
+  background-color: #A5EDDD;
+  background-image: url(../images/typeface-curve.svg);
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  background-position: center 0rem;
+  padding-bottom: 1.15rem;;
+  position: relative;
+  width: 100%;
+}
+
+
+#palette-mobile{
+  display: block;
+  margin: 0 auto;  
+}
+
+#palette-desktop{
+  display: none;
+}
+
+.palette-back{
+  background-color: #F7EFFF;
+  padding-top: 5rem;
+  background-image: url(../images/palette-curve.svg);
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  background-position: center 47rem;
+  padding-bottom: 1.15rem;;
+  position: relative;
+  width: 100%;
+}
+
+#i-brought{
+  padding-top: 2rem;
+}
+
+#cubby-logo{
+  display: block;
+  width: 380px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.vis-design{
+  background-color: #F7EFFF;
+  padding-top: 10rem;
+  background-image: url(../images/visual-curve.svg);
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  background-position: center -1rem;
+  padding-bottom: 1.15rem;;
+  position: relative;
+  width: 100%;
+}
+.img-mockups{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+#mobile-mockup{
+  display: block;
+  margin: 0 auto;
+}
+
+#mockup-button{
+ 
+}
+
+.preference-tests{
+  padding-top: 4rem;
+}
+#pref-buttons{
+  display: block;
+  width: 100%;
+  padding-top: 3rem;
+}
+
+#pref-cards{
+  display: block;
+  width: 100%;
+  padding-top: 3rem;
+}
+#pref-label{
+  padding-top: 3rem;
+}
+.prototypes{
+  background-color: #F7EFFF;
+  padding: 3rem 0;
+}
+
+.user-testing-2{
+  padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 
 ol{
+  margin: 2rem 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 7px 2px rgba(0,0,0,0.2);
+  padding: 2rem 2rem;
   color: #000;
-  font-family: 'Gravity-bookitalic';
-  font-size: 1.6rem;
+  font-family: 'Gravity-book';
+  font-size: 1.8rem;
   line-height: 140%;
 }
 
-p{
-  color: #BA808C;
+#desktop-mobile-card{
+  color: #000;
+  font-family: 'Gravity-book';
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem 0 1.3rem 0;
+}
+
+.desktop-testing{
+  display: block;
+  width: 100%;
+}
+
+.mobile-testing{
+  display: block;
+  margin: 0 auto;
+}
+
+.img-label-2{
+  color: #000;
+  font-family: 'Gravity-book';
+  font-size: 1.6rem;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  margin: 0 2rem;
+}
+
+#to-improve{
+  padding-top: 3rem;
+}
+
+.testing-back{
+  background-color: #DCF8F2;
+  background-image: url(../images/ut2-curve.svg);
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  background-position: center -1rem;
+  padding-top: 7rem;
+  padding-bottom: 1.15rem;;
+  position: relative;
+  width: 100%;
+}
+
+/* Conclusion */
+
+.conclusion{
+  background-color: #284078;
+}
+
+#conclusion-label{
+  color: #A5EDDD;
+  font-family: 'Gravity-light';
+  font-size: 3.5rem;
+  padding: 3rem 0 1rem 0;
+  text-align: center;
+}
+
+.case-study-text-white{
+  color: #fff; 
+  font-family: 'Gravity-light';
+  font-size: 1.8rem;
+  line-height: 130%;
+  margin: 0 2rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  text-align: left;
+}
+.under-cards{
+  position: relative;
+  top: -24rem;
+}
+
+/* footer - across all pages */
+
+#contact-footer{
+  color: #D02E77;
+  font-family: 'Gravity-book';
+  font-size: 2.8rem;
+  padding-bottom: .25rem;
+  padding-top: 8rem;
+  text-align: center;
+  width: 100%;
+}
+
+ul.social-bar{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+a { /* social icons */
+  padding: 1rem 1.4rem;
+} 
+
+#copywrite-info{
+  color: #D02E77;
+  /* #BA808C */
   font-family: 'Gravity-regular';
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+@media screen and (min-width: 768px){
+   /* nav bar */ 
+nav{
+   display: flex;
+   padding: 2rem 2rem 4rem 2rem;
+   justify-content: space-between;
+   flex-direction: row;
+}
+.menu-bar{
+  display: inline;
+  font-family: 'Gravity-book';
+  font-size: 1.6rem;
+  color: #D02E77;
+  text-align: right;
+}
+
+/* hero section */
+#mobile-hero{
+display: none;
+}
+ 
+#desktop-hero{
+display: block;
+width: 100%;
+}
+#cubby-title{
+  font-size: 6.5rem;
+}
+
+#cubby-tag-line{
+  font-size: 3.5rem;
+}
+
+.cubby-description-2{
+  margin: 0 18rem;
+  font-size: 2.7rem;
+}
+.case-study-text{
+  margin-left: 11rem;
+  width: 60rem;
+}
+.case-study-text-white{
+  margin-left: 11rem;
+  width: 60rem;
+}
+/* RDT and problem/solution */
+
+.roles-deliverables-tools{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ padding-bottom: 6rem;
+ padding-top: 3rem;
+}
+
+.problem-solution{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.ps-text-body{
+  margin: 2rem 4rem;
+}
+.ps{
+  text-align: center;
+}
+/* .case-study-text{
+  margin-left: 11rem;
+} */
+/* Discovery Phase */
+.disc-mobile{
+  display: none;
+}
+
+.disc-desktop{
+  display: block;
+}
+
+h5{
+  color: #284078;
+  font-family: 'Gravity-book';
+  font-size: 3.5rem;
+  text-align: center;
+}
+/* 
+#user-survey{
+  margin: 0 2rem;
+  position: absolute;
+  top: 210px;
+  width: 100%;
+} */
+
+
+/* survey */
+
+li.survey{
+  margin-left: 12rem;
+  text-align: left;
+}
+.survey-results{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 7rem;
+  grid-column-gap: 11rem; 
+  padding: 0 3rem;
+}
+
+#survey-caption{
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#survey-button{
+  grid-column-end: 4
+}
+/* percentages */
+
+#num-56{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+}
+#num-81{
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+#num-25{
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+#num-94{
+  grid-column-start: 1;
+  grid-row-start: 4;
+}  
+
+/* personas */
+.dark-blue-back{
+  background-color: #4F639A;
+  position: relative;
+}
+.persona-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 5rem;
+  position: relative;
+  top: -17rem;
+}
+.personas{
+  border-radius: 10px;
+  box-shadow: 0 0 7px 2px rgba(0,0,0,0.2);
+  margin: 0 4rem;
+  background-color: white;
+}
+.persona-titles{
+  border-radius: 10px 10px 0 0;
+}
+h4{
+  margin: 0 11rem;
+}
+/* comp analysis */
+
+.comp-analysis{
+  margin-top: 5rem;
+  margin-bottom:3rem;
+}
+
+.comp-analysis-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+  margin: 2rem 4rem;
+}
+
+br{
+ 
+}
+
+/* info arch */
+
+#info-arch-mobile{
+ display: none;
+}
+#info-arch-desktop{
+  display: block;
+  width: 100%;
+}
+
+.info-arch{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 3rem;
+}
+#stories-button{
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+#flows-button{
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+/* wireframes */
+.wireframes-main{
+  display: grid;
+  grid-template-columns: 1fr .75fr 1fr;
+}
+
+/* user testing 1 */
+.cards-back{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+#branding-mobile-back{
+  display: none;
+}
+#branding-desktop-back{
+  display: block;
+  width: 100%;
+}
+
+#designing-logo-desktop{
+  display: block;
+  opacity: 0.5;
+}
+#designing-logo-mobile{
+  display: none;
+}
+
+#logo-options-mobile{
+  display: none;
+}
+
+#logo-options-desktop{
+  display: block;
+  margin: 0 auto;
+}
+
+#palette-mobile{
+  display: none;
+}
+
+#palette-desktop{
+  display: block;
+  margin: 0 auto;   
+}
+
+.wireframes-image{
+  margin: 0 auto;
+  width: auto;
+}
+
+#mobile-wireframe-image{
+   margin: 0 auto;
+   width: auto;
+}
+
+.img-mockups{
+  margin: 0 auto;
+  width: auto;
+}
+}
+
+
+@media screen and (min-width: 600px){
+ .desktop-testing{
+      margin: 0 auto;
+      width: auto;
+  }
+  
+  .mobile-testing{
+      margin: 0 auto;
+      width: auto;
+  }
+}
+@media screen and (min-width: 710px){
+  #pref-buttons{
+      display: block;
+      /* margin: 0 auto; */
+      border-radius: 8px;
+      box-shadow: 0 0 7px 2px rgba(0,0,0,0.2);
+      padding: 3rem 0;
+      margin: 0 auto;
+      width: auto;
+  }
+  #pref-cards{
+      display: block;
+      /* margin: 0 auto; */
+      border-radius: 8px;
+      box-shadow: 0 0 7px 2px rgba(0,0,0,0.2);
+      padding: 3rem 0;
+      margin: 0 auto;
+      width: auto;
+  }
+}
+
+@media screen and (min-width: 890px){
+  #typeface-mobile{
+      display: none;
+  }
+  
+  #typeface-desktop{
+      display: block;
+      margin: 0 auto;    
+  }
 }
