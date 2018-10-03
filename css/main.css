@@ -148,9 +148,9 @@ a.button{
   width: 100%; 
 }
 .mobile-landing{
-  height: auto;
-  padding-top: 30px;
-   /* width: 100%; */
+  display: block;
+  width: 100%; 
+  padding-top: 3rem;
 }
 
 .desktop-landing{
@@ -379,9 +379,9 @@ a { /* social icons */
 
 /* landing page MQ */
 @media screen and (min-width: 440px){
-  .mobile-landing{
+  /* .mobile-landing{
     width: initial;
-  }
+  } */
 }
 
 /* about page MQ */
