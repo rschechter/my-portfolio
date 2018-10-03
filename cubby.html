@@ -12,7 +12,7 @@
 <!-- Nav Bar-->
     <nav>
       <div id="logo">
-        <img src="images/rb-logo-2.png">
+          <a href="index.html"><img src="images/rb-logo-2.png"></a>
       </div>
       <div class="menu-bar">
         <ul>
@@ -162,7 +162,7 @@
            <div class="persona-cards">
              <div class="personas">
              <div class="persona-image-overlap">
-                <p class="persona-titles">Marcus is a 21 year old student in <br />Philadelphia, PA.</p>
+                <p class="persona-titles">Marcus is a 21 year old student in <br class="persona-break" />Philadelphia, PA.</p>
                 <img class="marcus-samantha" src="images/marcus.png" width="50" height="50">
              </div>
              <p id="marcus-samantha-summary" class="card-text">Marcus is a biology student at a top university and planning on pursuing medicine after graduation. He
@@ -179,7 +179,7 @@
             </div>
          <div class="personas">
             <div class="persona-image-overlap">
-                <p class="persona-titles">Samantha is a 26 year old social <br />worker in White Plains, NY.</p>
+                <p class="persona-titles">Samantha is a 26 year old social <br class="persona-break" />worker in White Plains, NY.</p>
                 <img class="marcus-samantha" src="images/samantha.png">
             </div>
             <p id="marcus-samantha-summary" class="card-text">Samantha is a clinical social worker who works in-house at a doctor's office and sees between 5 and 7 patients a day.
@@ -231,10 +231,10 @@
       </div>
      </section>
 <!-- Information Architecture-->
-     <section>
+     <section id="ia">
        <div class="info-arch-overlap">
-            <img id="info-arch-mobile" src="images/info-arch-back-mobile.png">
-            <img id="info-arch-desktop" src="images/info-arch-back.png">
+            <!--<img id="info-arch-mobile" src="images/info-arch-back-mobile.png">
+            <img id="info-arch-desktop" src="images/info-arch-back.png">-->
                 <h5 id="info-arch" class="section-label">Information Architecture</h5>
                 <div class="info-arch">
                 <h4 id="user-stories-flows">User Stories & Flows</h4>
@@ -248,21 +248,23 @@
               </div>
 
             
-          <div class="wireframes-main"> 
+              <div class="wireframes-main"> 
           <h4 id="wf-label">Wireframes</h4>
            <p class="case-study-text">Based on all previous research, I developed a series of hand-sketches which turned into wireframes
              to begin visualizing the layout of the app.</p>
-         <div class="wireframes">
+          
+            <div class="wireframes">
+             <img id="wf-desktop" src="images/wireframes-desktop.png">
             <img id="wf-1" class="wireframes-image" src="images/wf-1.png">
-            <p class="img-label">Dashboard + create content</p>
+            <p class="img-label wf-label">Dashboard + create content</p>
          </div>
          <div class="wireframes">
             <img class="wireframes-image" src="images/wf-2.png">
-            <p class="img-label">Create new document + share/collaborate with others</p>
+            <p class="img-label wf-label">Create new document + share/collaborate with others</p>
         </div>
          <div class="wireframes">
              <img id="mobile-wireframe-image" src="images/wf-3.png">
-             <p class="img-label">Dashboard for mobile</p>
+             <p class="img-label wf-label">Dashboard for mobile</p>
          </div>
             <a href="https://docs.google.com/document/d/1hT4RjnSZCv2oG0RakNPgymJZTGI0LJPH2wjfEuY8tEw/edit?usp=sharing" id="sketches-wireframes-button" class="green-button">View All Sketches and Wireframes</a>
         </div>
@@ -288,27 +290,27 @@
      </section>
 <!-- Branding & Identity-->
      <section>
-       <div class="branding-overlap">
-         <img id="branding-mobile-back" src="images/branding-mobile-back.png">
-         <img id="branding-desktop-back" src="images/branding-back.png">
-         <h5 id="branding" class="section-label">Branding &<br /> Identity</h5>
-         <p class="branding-card-text">Now that l had a grasp on who my target audience was and what the gist of the app was all about,
-            I began the branding phase.</p>
+       <div id="brand">
+        <div class="branding-overlap">
+          <h5 class="branding" class="section-label">Branding &<br /> Identity</h5>
+          <p class="branding-text">Now that l had a grasp on who my target audience was and what the gist of the app was all about,
+              I began the branding phase.</p>
+        </div>
       </div>
            <p id="i-decided" class="case-study-text">I decided to call this app “Cubby” as its target audience is students, and a cubby is a common
              classroom resource used to store and organize many different school-related things. My objective with this brand was to
              create a sense of organization and clarity which will help users block out distractions and maximize their productivity.</p>
-         <div class="logo-overlap">
-           <img id="designing-logo-desktop" src="images/designing-logo-back.png">
-           <img id="designing-logo-mobile" src="images/designing-the-logo-mobile.png">
-           <h4 id="designing-logo">Designing the Logo</h4>
-           <p class="logo-card-text">I wanted the logo to be modern, simple and coherent as to not cause any visual distractions to
+        <div id="logo-section">
+             <div class="logo-overlap">
+           <h4 class="branding" id="designing-logo">Designing the Logo</h4>
+           <p class="branding-text i-wanted">I wanted the logo to be modern, simple and coherent as to not cause any visual distractions to
              the user. I started out by trying to incorporate the letter “C” or the whole word “Cubby” into squares and rectangles.</p>
          </div>
-         <div>
-           <p class="case-study-text">I eventually landed on these two design options and I decided to go with option 1 as I found it
+         </div>
+         <div class="logo-wrapper">
+           <p class="case-study-text i-eventually">I eventually landed on these two design options and I decided to go with option 1 as I found it
              to be more visually interesting, and some feedback I sought out matched this opinion.</p>
-            <img id="logo-options-mobile" src="images/logo-options-mobile.png">
+            <img class="logo-options-mobile" src="images/logo-options-mobile.png">
             <img id="logo-options-desktop" src="images/logo-options.png">
           </div>
        <!-- typeface-->
@@ -328,15 +330,16 @@
        
      </section>
 <!-- Visual Design-->
-     <section class="visual-design">
+     <section>
        <div class="vis-design">
-       <div class="section-label">
+       <div class="section-label branding">
           <span class="label">Visual Design</span>
          </div>
            <h4>Mockups</h4>
            <p class="case-study-text">Based on feedback from my wireframes and style guide, I created high-fidelity mockups using
              Figma to depict what the interfaces of specific screens will look like while using Cubby.</p>
-           <div class="mockups">
+           <div class="mockups-section">
+             <div class="mockups">
              <img class="img-mockups" src="images/mockup-1.png">
              <p class="img-label">Landing page + sign up</p>
            </div>
@@ -349,30 +352,29 @@
               <p class="img-label">Mobile sign in page</p>
             </div>
           </div>
+          </div>
           <a href="" class="green-button">View All Mockups</a>
        <div class="preference-tests">
            <h4>Preference Tests</h4>
            <p class="case-study-text">As my wireframes became more polished, I ran some preference tests to help me decide on some details in my design.
              Here are two of the images that I showed testers:</p>
-         <div>
-           <img id="pref-buttons" src="images/pref-test-buttons.png">
-           <p id="pref-label" class="img-label">Test 1: which icon color do you prefer?</p>
-           <p class="case-study-text">All three of my testers told me that they liked the turquoise icons better than the yellow  ones, because they
+         <div class="pref-grid">
+           <img class="pref pref-buttons" src="images/pref-test-buttons.png">
+           <!-- <p id="pref-label" class="img-label">Test 1: which icon color do you prefer?</p> -->
+           <p class="case-study-text pref-text">All three of my testers told me that they liked the turquoise icons better than the yellow  ones, because they
              were easier to see. I had thought this as well, but really wanted to figure out a way to include this yellow in my designs as I thought
              it was a nice accent color to the blues and turquoises, but I ultimately decided to let it go and just stick with the turquoise for
              readability purposes.</p>
-         </div>
-         <div>
-           <img id="pref-cards" src="images/pref-cards.png">
-           <p id="pref-label" class="img-label">Test 2: which card shape do you prefer?</p>
-           <p class="case-study-text">Two of my testers told me that they liked option 1 best, and one tester chose option 2. I decided to choose
+           <img class="pref pref-cards" src="images/pref-cards.png">
+           <!-- <p id="pref-label" class="img-label">Test 2: which card shape do you prefer?</p> -->
+           <p class="case-study-text pref-text">Two of my testers told me that they liked option 1 best, and one tester chose option 2. I decided to choose
              option 1 as I felt that the style aligned best with the overall brand. It evoked the greatest sense of simplicity which is something I
              was trying to achieve, and it gave the whole interface a modern and clean look.</p>
          </div>
        </div>
        <div class="prototypes">
-           <h4>Prototypes</h4>
-           <p class="case-study-text">After my mockups were completed, I used the prototyping tool on Figma to connect them to one another thereby
+           <h4 id="prototypes">Prototypes</h4>
+           <p id="prototypes-summary" class="case-study-text">After my mockups were completed, I used the prototyping tool on Figma to connect them to one another thereby
              enabling a user to test out the flow of the mockups. This phase was to help me as the designer understand the user’s ability to navigate
              the interface and therefore make tweaks to the designs if necessary.</p>
            <a href="https://www.figma.com/proto/V40XYZU14ZhpDBDMaCdyf1gf/Cubby-Project-Prototypes?node-id=0%3A1&viewport=212%2C-783%2C0.230192&scaling=min-zoom" class="green-button">Desktop Prototype</a>
@@ -386,22 +388,28 @@
          <div class="testing-back">
               <ol>
                 <li id="desktop-mobile-card">Desktop</li>
-                <li>1. Change the combination of typefaces on the dashboard cards to be only one typeface to help improve readability</li> <br />
-                <li>2. Swap out dividing line of the “Browse” window on the desktop dashboard for a solid color in that section</li>
+                <div class="table">
+                    <li class="list">1. Change the combination of typefaces on the dashboard cards to be only one typeface to help improve readability</li> <br />
+                    <li class="list">2. Swap out dividing line of the “Browse” window on the desktop dashboard for a solid color in that section</li>
+                 </div>
               </ol>
-              <p class="img-label-2">Before</p>
-              <img class="desktop-testing" src="images/desktop-before.png">
-              <p class="img-label-2">After</p>
-              <img class="desktop-testing" src="images/desktop-after.png"> <br /> <br />
+              <div class="ut-2-grid">
+                  <p class="img-label-2">Before</p>
+                  <img class="desktop-testing" src="images/desktop-before.png">
+                  <p class="img-label-2 after">After</p>
+                  <img class="desktop-testing" src="images/desktop-after.png"> <br /> <br />
+              </div>
               <ol>
                 <li id="desktop-mobile-card">Mobile</li>
-                <li>1. Change the combination of typefaces on the dashboard cards to be only one typeface to help improve readability</li> <br />
-                <li>2. Modify the toolbar at the bottom of the mobile dashboard so that it doesn’t look dated</li>
+                <li class="list">1. Change the combination of typefaces on the dashboard cards to be only one typeface to help improve readability</li> <br />
+                <li class="list">2. Modify the toolbar at the bottom of the mobile dashboard so that it doesn’t look dated</li>
               </ol>
-              <p class="img-label-2">Before</p>
-              <img class="mobile-testing" src="images/before-mobile.png">
-              <p class="img-label-2">After</p>
-              <img class="mobile-testing" src="images/after-mobile.png">
+              <div class="ut-2-grid ut-mobile">
+                  <p class="img-label-2">Before</p>
+                  <img class="mobile-testing" src="images/before-mobile.png">
+                  <p class="img-label-2 after">After</p>
+                  <img class="mobile-testing" src="images/after-mobile.png">
+              </div>
           </div>
            <p id="to-improve" class="case-study-text">To improve this project in the future, I hope to  build out the “how it works” page (as indicated with a button on
              the landing page) to explain the product’s business model and a little more about how the product will work.</p>
@@ -410,7 +418,7 @@
 <!-- Conclusion-->
      <section class="conclusion">
         <h5 id="conclusion-label">Conclusion</h5>
-        <p class="case-study-text-white">I learned a lot while working this project. I was really able to develop more of a hands-on understanding
+        <p class="case-study-text-white concl-text">I learned a lot while working this project. I was really able to develop more of a hands-on understanding
              to the design process and it was interesting to see how one step leads to the next in a way that I feel truly makes sense. I
              found the multiple rounds of testing and iteration to be very productive and useful, and I am feeling much more comfortable
              with getting users’ feedback on different phases of the project. I am excited to incorporate these steps and all of the knowledge
