@@ -20,7 +20,7 @@ nav{
   
 }
 
-#logo{
+.logo{
   padding: 2rem 0;
 }
 
@@ -60,14 +60,14 @@ padding-bottom: 2rem;
 text-align: center;
 }
 
-#mobile-hero{
+/* #mobile-hero{
 display: block;
 width: 100%;
-}
+} */
 
 #desktop-hero{
-display: none;
-}
+  width: 100%;
+} 
 
 .cubby-description-2{
 color: #000;
@@ -85,14 +85,14 @@ text-align: center;
   border-radius: 8px;
   color: #fff; 
   display: block;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-regular';
   font-size: 1.8rem;
   line-height: 130%;
   margin: 2rem auto; 
   padding: 12px 35px;
   text-align: center;
   text-decoration: none;
-  width: 240px; /*previous 160px*/
+  width: 240px; 
 }
 
 .roles-deliverables-tools{
@@ -140,14 +140,14 @@ text-align: center;
   background-color: #A5EDDD; 
 }
 
-.disc-mobile{
+/* .disc-mobile{
   display: block;
   width: 100%;
 }
 
 .disc-desktop{
   display: none;
-}
+} */
                                   /* Discovery Phase */
 
 .section-label{
@@ -194,32 +194,35 @@ h5{
 }
 /* discovery section overlap */
 .disc-image-overlap{
-  position: relative;
-  width: 100%;
+  background-image: url(../images/discovery-phase-mobile.png);
+  background-repeat: no-repeat;
+  padding: 4rem 0;
+  background-size: cover;
 }
 #disc-phase{
   padding-bottom: 5rem;
-  position: absolute;
+  /* position: absolute; */
   margin: 0 auto;
   top: 55px;
   width: 100%;
 }
 #user-survey{
-  position: absolute;
+  /* position: absolute; */
   top: 210px;
   width: 100%;
 }
 
 #disc-phase-intro-body{
-  position: absolute;
+  /* position: absolute; */
   top: 250px;
 }
 
 /* survey questions */
 
 .survey-questions{
-  padding: 2.5rem 0 2.5rem 0;
+  padding: 0 0 2.5rem 0;
 }
+
 li.survey{
   color: #31397E;
   font-family: 'Gravity-italic';
@@ -251,21 +254,16 @@ li.survey{
   flex-direction: column;
   align-items: center;
 }
-/* when it should take up 2 vertical cells:
-grid-row-start: 2;
-grid-row-end: 4;  */
-
-/* grid-column-start: 2; to get it in the second column */ 
 
 .percent{
   color: #fff;
   font-family: 'Gravity-bookitalic';
   font-size: 4rem;
-  text-align: left; /*will have to figure out this grid situation*/
+  text-align: left; 
 }
-.percent-caption{ /* how to turn these into a grid? */
+.percent-caption{
   color: #fff;
-  font-family: 'Gravity-lightitalic';
+  font-family: 'Gravity-bookitalic';
   font-size: 2.3rem;
   line-height: 120%;
   text-align: center;
@@ -299,9 +297,7 @@ grid-row-end: 4;  */
 #survey-caption{
   color: white;
   margin: 0 2rem;
-  /* position: absolute; */
-  /* top: 50px; */
-  font-family: 'Gravity-light';
+  font-family: 'Gravity-book';
   font-size: 2rem;
   line-height: 120%;
   padding-top: 3rem;
@@ -311,7 +307,7 @@ grid-row-end: 4;  */
 }
 
 #survey-button{
-  width: 207px;
+  width: 215px;
   grid-column-start: 1;
   grid-column-end: 3
 }
@@ -380,7 +376,7 @@ text-align: center;
 }
 #after-personas{
   color: white;
-  font-family: 'Gravity-light';
+  font-family: 'Gravity-book';
   font-size: 1.8rem;
   line-height: 140%;
   margin: 0 2rem;
@@ -423,31 +419,31 @@ text-align: center;
   margin: 0 2rem;
   padding-top: 4rem;
 }
-
+/* 
 #info-arch-mobile{
   width: 100%;
 }
 #info-arch-desktop{
   display: none;
-}
+} */
 
-#ia{
+/* #ia{
   margin-bottom: -14rem;
-}
+} */
 
 .wireframes{
   padding: 3.75rem 0 3rem 0;
   
 }
 .wireframes-main{
-  background-color: #FAF6FF;
+  background-color: #F7EFFF;
   background-image: url(../images/wf-curve.svg);
   background-repeat: no-repeat; 
   background-size: 100%;
-  background-position: center 160.75rem;
+  background-position: center bottom;
   padding-bottom: 1.15rem;;
-  position: relative;
-  width: 100%;
+  /* position: relative;
+  width: 100%; */
 }
 
 #wf-label{
@@ -479,13 +475,9 @@ text-align: center;
   margin: 0 2rem;
 }
 
-#sketches-wireframes-button{
+.wireframes-mockups-button{
   padding: 15px 30px;
-  width: 281px;
-  float: right;
-  margin-right: 16rem;
-  position: relative;
-  top: -13rem;
+  width: 286px;
 }
 
 #user-testing-1{
@@ -500,9 +492,8 @@ text-align: center;
   background-repeat: no-repeat; 
   background-size: 100%;
   background-position: center 66.55rem;
-  padding-bottom: 14rem;
   position: relative;
-  width: 100%;
+  margin-bottom: -9rem;
 }
 .test-result-card{
   background-color: #A5EDDD;
@@ -528,35 +519,38 @@ text-align: center;
 }
 
 /* Branding & Identity */
+.branding-overlap{
+  background-image: url(../images/ut1-curve2.svg);
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  background-position: center -13vw;
+  padding-bottom: 3rem;
+  position: relative;
+  width: 100%;
+}
 
 #brand{
   background-image: url(../images/branding-group-desktop.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center top;
+}
+
+.branding{
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 4rem;
 }
 
 #logo-section{
   background-image: url(../images/designing-logo-back.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center top;
+  padding-bottom: 4rem;
 }
 
 /* overlap */
-
-/*
-#branding-mobile-back{
-  position: relative;
-  width: 100%;
-  top: -25rem;
-  padding-bottom: 3rem;
-}
-
-#branding{
-  position: relative;
-  top: -70rem;
-} */
 
 .branding-text{
   color: #284078;
@@ -573,73 +567,49 @@ text-align: center;
 
 #i-decided{
   padding: 4rem 0 4rem 0;
+  width: 80%;
 } 
-
-/* #designing-logo-desktop{
-  display: none;
-}
-#designing-logo-mobile{
-  display: block;
-  width: 100%;
-  padding-bottom: 3rem;
-  opacity: 0.5;
-}
-
-/* overlap */
-
-/* .logo-overlap{
-  position: relative;
-  width: 100%;
-}*/
 
 #designing-logo{
-  padding-top: 17rem;
+  padding-top: 10rem;
 } 
 
-
-/* .branding-text{
-  color: #284078;
-  font-family: 'Gravity-book';
-  font-size: 1.8rem;
-  line-height: 130%;
-  text-align: left;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px .5px rgba(0,0,0,0.2);
-  padding: 1rem 1rem;
-  margin: 2rem 2rem; }*/
-
-  /* position: absolute;
-  top: 150px;*/
-
-
-.logo-options-mobile{
+/* .logo-options-mobile{
   display: block;
   margin: 0 auto;
   padding-top: 1.7rem;
 }
+*/
 
-#logo-options-desktop{
-  display: none;
+#logo-options{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+} 
+
+.i-eventually{
+  padding: 3rem 0;
 }
 
 /* typeface */
-#typeface-mobile{
+/* #typeface-mobile{
   display: block;
   margin: 0 auto;
 }
-
+*/
 #typeface-desktop{
-  display: none;
-}
+  display: block;
+  margin: 0 auto;
+} 
 
 .typeface-back{
   background-color: #A5EDDD;
   background-image: url(../images/typeface-curve.svg);
   background-repeat: no-repeat; 
-  background-size: 100%;
-  background-position: center 0rem;
-  padding-bottom: 1.15rem;;
+  background-size: cover;
+  background-position: center bottom;
+  padding-bottom: 1.15rem;
+  padding-top: 12.5vw;
   position: relative;
   width: 100%;
 }
@@ -651,7 +621,8 @@ text-align: center;
 }
 
 #palette-desktop{
-  display: none;
+  display: block;
+  margin: 0 auto;
 }
 
 .palette-back{
@@ -660,14 +631,15 @@ text-align: center;
   background-image: url(../images/palette-curve.svg);
   background-repeat: no-repeat; 
   background-size: 100%;
-  background-position: center 47rem;
-  padding-bottom: 1.15rem;;
-  position: relative;
-  width: 100%;
+  background-position: center bottom;
+  padding-bottom: 1.15rem;
+  /* position: relative;
+  width: 100%; */
 }
 
 #i-brought{
   padding-top: 2rem;
+  margin-top: 5rem;
 }
 
 #cubby-logo{
@@ -677,6 +649,12 @@ text-align: center;
   margin: 0 auto;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.logo-back{
+  background-image: url(../images/shards-background.png);
+  background-repeat: no-repeat; 
+  background-size: 100%;
 }
 
 .vis-design{
@@ -690,6 +668,10 @@ text-align: center;
   position: relative;
   width: 100%;
 }
+
+.v-design{
+  padding-top: 0;
+}
 .img-mockups{
   display: block;
   width: 100%;
@@ -699,7 +681,9 @@ text-align: center;
   display: block;
   margin: 0 auto;
 }
-
+#desktop-mockup{
+  display: none;
+}
 /* #mockup-button{
 } */
 
@@ -708,23 +692,21 @@ text-align: center;
 }
 
 .preference-tests{
-  padding-top: 4rem;
+  padding-top: 13rem;
+}
+.mockup-bottom{
+  background-image: url(../images/wf-curve.svg);
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  background-position: center top;
 }
 
 .pref{
   display: block;
   width: 100%;
-  padding-top: 3rem;
+  padding: 3rem 0;
 }
-/* .pref-buttons{
- 
-}
-
-.pref-cards{
-  display: block;
-  width: 100%;
-  padding-top: 3rem;
-} */
+/* .pref-buttons */
 #pref-label{
   padding-top: 3rem;
 }
@@ -802,7 +784,7 @@ ol{
 
 #conclusion-label{
   color: #A5EDDD;
-  font-family: 'Gravity-light';
+  font-family: 'Gravity-book';
   font-size: 3.5rem;
   padding: 3rem 0 1rem 0;
   text-align: center;
@@ -810,7 +792,7 @@ ol{
 
 .case-study-text-white{
   color: #fff; 
-  font-family: 'Gravity-light';
+  font-family: 'Gravity-book';
   font-size: 1.8rem;
   line-height: 130%;
   margin: 0 2rem;
@@ -819,8 +801,15 @@ ol{
   text-align: left;
 }
 .under-cards{
+  background-color: #6B7CAA;
   position: relative;
-  top: -24rem;
+  color: #fff;
+  font-family: 'Gravity-book';
+  font-size: 1.8rem;
+  line-height: 130%;
+  padding: 2rem;
+  text-align: left;
+  /* margin-bottom: -9rem; */
 }
 
 /* footer - across all pages */
@@ -875,14 +864,14 @@ nav{
 }
 
 /* hero section */
-#mobile-hero{
+/* #mobile-hero{
 display: none;
 }
  
 #desktop-hero{
 display: block;
 width: 100%;
-}
+} */
 #cubby-title{
   font-size: 6.5rem;
 }
@@ -922,29 +911,21 @@ width: 100%;
 .ps{
   text-align: center;
 }
-/* .case-study-text{
-  margin-left: 11rem;
-} */
+
 /* Discovery Phase */
-.disc-mobile{
-  display: none;
+
+.disc-image-overlap{
+  /* position: relative; */
+  /* width: 100%;
+  overflow-x: hidden; */
+  background-image: url(../images/discovery-back.png);
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  padding: 10rem 0;
 }
-
-.disc-desktop{
-  display: block;
+.survey-questions{
+  padding: 2.5rem 0 2.5rem 0;
 }
-
-
-/* 
-#user-survey{
-  margin: 0 2rem;
-  position: absolute;
-  top: 210px;
-  width: 100%;
-} */
-
-
-/* survey */
 
 li.survey{
   margin-left: 12rem;
@@ -1050,7 +1031,7 @@ br{
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-column-gap: 3rem; 
-  padding-bottom: 7rem;
+  padding-bottom: 13rem;
   padding-top: 2rem;
 }
 
@@ -1071,30 +1052,17 @@ br{
   padding-bottom: 3rem;
 }
 
+#info-arch{
+  padding-top: 13rem;
+}
+
 
 /* wireframes */
-/* .wireframes-main{
-  display: grid;
-  grid-template-columns: 1fr .75fr 1fr;
-} */
 
 /* user testing 1 */
-.cards-back{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  padding-bottom: 0rem;
-}
 
-/* #branding-mobile-back{
-  display: none;
-}
-#branding-desktop-back{
-  display: block;
-  width: 100%;
-} */
 
-.branding-overlap{
+/* .branding-overlap{
   background-image: url(../images/ut1-curve2.svg);
   background-repeat: no-repeat; 
   background-size: 100%;
@@ -1102,12 +1070,13 @@ br{
   padding-bottom: 3rem;
   position: relative;
   width: 100%;
-}
+} */
 
 .branding{
   text-align: left;
   margin-left: 11rem;
-  padding-top: 8rem;
+  padding-top: 18rem;
+  padding-bottom: 0;
 }
 
 .branding-text{
@@ -1116,49 +1085,48 @@ br{
   margin-left: 11rem;
   width: 40rem;
   padding: 0 0 5rem 0;
-  margin-top: 15rem
+  margin-top: 15rem;
 }
 .i-wanted{
   margin-top: 5rem;
-  padding-bottom: 32rem;
+  padding-bottom: 15rem;
   width: 60rem;
 }
-.under-cards{
-  margin-left: 50%;
-  margin-right: 10%;
-  top: -9rem;
-}
-/* #designing-logo-desktop{
-  display: block;
-  opacity: 0.5;
-}
-#designing-logo-mobile{
-  display: none;
-} */
 
+#logo-section{
+  padding-bottom: 0;
+}
+.under-cards{
+  padding-left: 55%;
+  padding-right: 5%;
+  padding-bottom: 0;
+  /* background-color: #6B7CAA; */
+}
 
 .logo-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 9rem 0 9rem 0;
+  padding: 7rem;
 }
 
 .i-eventually{
   align-self: center;
   width: 50rem;
-  margin-left: 3rem;
+  margin-left: 6rem;
+  grid-column-start: 2;
+  grid-row-start: 1;
 }
 
-#logo-options-mobile{
+/* #logo-options-mobile{
   display: none;
 }
 
 #logo-options-desktop{
   display: block;
-  margin: 0 0 0 11rem;
   grid-column-start: 1;
   grid-row-start: 1;
-}
+  width: 100%;
+} */
 
 #palette-mobile{
   display: none;
@@ -1168,6 +1136,12 @@ br{
   display: block;
   margin: 0 auto;   
 }
+.v-design{
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  text-align: left;
+  margin-left: 11rem;
+}
 
 .wireframes-image{
   display: none;
@@ -1176,6 +1150,7 @@ br{
 #wf-desktop{
   display: block;
   margin: 0 auto;
+  width: 95%;
 }
 
 
@@ -1187,9 +1162,46 @@ br{
   display: none;
 }
 
+.wireframes-mockups-button{
+  float: right;
+  margin-right: 5%;
+  position: relative;
+  top: -13rem;
+}
+#mu-button{
+  top: 0rem;
+}
+
+.logo-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10rem;
+}
+
+.style-guide{
+  height: 25px;
+  align-self: center;
+}
+
 .img-mockups{
+  display: none;
+}
+
+#mobile-mockup{
+  display: none;
+}
+
+#desktop-mockup{
+  display: block;
+  width: 95%;
   margin: 0 auto;
-  width: auto;
+  padding: 3rem 0;
+}
+.mockup-label{
+  display: none;
+}
+#pref-label{
+  display: none;
 }
 
 .prototypes{
@@ -1226,9 +1238,12 @@ ol{
   display: inline;
 }
 
-.table{
-  display: table;
-  margin: 0 auto;
+.h-list{
+  display: flex;
+}
+
+.ut2{
+  margin: 1rem;
 }
 
 .ut-2-grid{
@@ -1266,60 +1281,70 @@ ol{
 @media screen and (min-width: 600px){
  .desktop-testing{
       margin: 0 auto;
-      width: auto;
+      width: 100%
   }
   
   .mobile-testing{
       margin: 0 auto;
-      width: auto;
+      width: 100%;
   }
 }
 @media screen and (min-width: 710px){
-  .pref{
-      background-color: #fff;
-      display: block;
-      /* margin: 0 auto; */
-      border-radius: 10px;
-      box-shadow: 0 0 7px 2px rgba(0,0,0,0.2);
-      padding: 4rem 2rem;
-      margin: 0 auto;
-      width: auto;
-  }
 
-  .pref-buttons{
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
 
-  .pref-cards{
-      grid-row-start: 2;
-      grid-row-end: 3;
-  }
-
-  .pref-text{
-    margin-left: 0;
-    width: auto;
-    color: white;
-    font-family: 'Gravity-light';
-  }
-
-  .pref-grid{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 5rem;
-    background-color: #6B7CAA;
-    padding: 6rem 4rem;
-    margin-top: 5rem;
-  }
 }
 
 @media screen and (min-width: 890px){
-  #typeface-mobile{
-      display: none;
-  }
-  
+
   #typeface-desktop{
-      display: block;
-      margin: 0 auto;    
+    display: block;
+      margin: 0 auto; 
+      width: 85%;   
+  } 
+} 
+
+@media screen and (min-width: 950px){
+  .cards-back{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin-bottom: -9rem;
   }
+
+  .pref{
+    background-color: #fff;
+    display: block;
+    /* margin: 0 auto; */
+    border-radius: 10px;
+    box-shadow: 0 0 7px 2px rgba(0,0,0,0.2);
+    padding: 2rem 0;
+    margin: 0 auto;
+    /* width: auto; */
+}
+
+.pref-buttons{
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.pref-cards{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.pref-text{
+  margin-left: 0;
+  width: auto;
+  color: white;
+  font-family: 'Gravity-book';
+}
+
+.pref-grid{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 5rem;
+  background-color: #6B7CAA;
+  padding: 6rem 4rem;
+  margin-top: 5rem;
+}
 }
