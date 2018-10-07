@@ -6,24 +6,24 @@
   <title>Portfolio | Rachel Beiser</title>
   <!--<link href="" rel="stylesheet">-->
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
  </head>
  <body>
 <!-- Nav Bar-->
     <nav>
-      <div id="logo">
+      <div class="logo">
           <a href="index.html"><img src="images/rb-logo-2.png"></a>
       </div>
       <div class="menu-bar">
         <ul>
           <li>
-          <a href="index.html" class="button-2">WORK</a>
+          <a href="cubby.html" class="button-2">WORK</a>
           </li>
           <li>
           <a href="about.html" class="button-2">ABOUT</a>
           </li>
           <li>
-          <a href="" class="button-2">RESUME</a>
+          <a href="documents/bloc-resume.pdf" class="button-2">RESUME</a>
           </li>
         </ul>
       </div>
@@ -32,8 +32,11 @@
    <header class="main">
      <h1 id="cubby-title">CUBBY</h1>
      <h2 id="cubby-tag-line">Work harder, study smarter.</h2>
-     <img id="mobile-hero" src="images/mobile-cubby-hero.png" alt="header image">
-     <img id="desktop-hero" src="images/desktop-cubby-hero.png" alt="header image">
+     <picture>
+        <source media="(max-width: 768px)" srcset="images/mobile-cubby-hero.png">
+        <source media="(min-width: 769px)" srcset="images/desktop-cubby-hero.png">
+        <img id="desktop-hero" src="images/desktop-cubby-hero.png" alt="header image">
+     </picture>
      <h3 class="cubby-description-2">Cubby is a cloud storage app for students that makes it possible to
        create, upload, browse, organize and collaborate on any content across any platform.</h3>
      <a href="https://www.figma.com/proto/V40XYZU14ZhpDBDMaCdyf1gf/Cubby-Project-Prototypes?node-id=0%3A1&viewport=212%2C-783%2C0.230192&scaling=min-zoom" class="green-button">VIEW PROTOTYPE</a>
@@ -95,8 +98,6 @@
 <!-- Discovery Phase-->
      <section class="discovery-phase">
        <div class="disc-image-overlap">
-          <img class="disc-mobile" src="images/discovery-phase-mobile.png">
-          <img class="disc-desktop" src="images/discovery-back.png">
           <h5 id="disc-phase" class="section-label">Discovery <br />Phase</h5>
           <h4 id="user-survey">User Survey</h4>
           <p id="disc-phase-intro-body" class="case-study-text">I began by creating a user survey and distributing it to friends and
@@ -266,7 +267,7 @@
              <img id="mobile-wireframe-image" src="images/wf-3.png">
              <p class="img-label wf-label">Dashboard for mobile</p>
          </div>
-            <a href="https://docs.google.com/document/d/1hT4RjnSZCv2oG0RakNPgymJZTGI0LJPH2wjfEuY8tEw/edit?usp=sharing" id="sketches-wireframes-button" class="green-button">View All Sketches and Wireframes</a>
+            <a href="https://docs.google.com/document/d/1hT4RjnSZCv2oG0RakNPgymJZTGI0LJPH2wjfEuY8tEw/edit?usp=sharing" class="green-button wireframes-mockups-button">View All Sketches and Wireframes</a>
         </div>
           <div class="user-testing-1">
               <h4 id="user-testing-1">User Testing Round 1</h4>
@@ -285,7 +286,7 @@
                 graphic element, with either “sign in” or “sign up” with another button visible for the other option</p>
             </div>
           </div>
-              <p class="under-cards case-study-text-white">This exercise was helpful for me because not only did I receive good feedback about design details that I
+              <p class="under-cards">This exercise was helpful for me because not only did I receive good feedback about design details that I
                 would have otherwise overlooked, but I became more comfortable with other people viewing and interacting with my work.</p>
      </section>
 <!-- Branding & Identity-->
@@ -302,7 +303,7 @@
              create a sense of organization and clarity which will help users block out distractions and maximize their productivity.</p>
         <div id="logo-section">
              <div class="logo-overlap">
-           <h4 class="branding" id="designing-logo">Designing the Logo</h4>
+           <h4 id="designing-logo">Designing the Logo</h4>
            <p class="branding-text i-wanted">I wanted the logo to be modern, simple and coherent as to not cause any visual distractions to
              the user. I started out by trying to incorporate the letter “C” or the whole word “Cubby” into squares and rectangles.</p>
          </div>
@@ -310,29 +311,41 @@
          <div class="logo-wrapper">
            <p class="case-study-text i-eventually">I eventually landed on these two design options and I decided to go with option 1 as I found it
              to be more visually interesting, and some feedback I sought out matched this opinion.</p>
-            <img class="logo-options-mobile" src="images/logo-options-mobile.png">
-            <img id="logo-options-desktop" src="images/logo-options.png">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/logo-options-mobile.png">
+                <source media="(min-width: 769px)" srcset="images/logo-options.png">
+                <img id="logo-options" src="images/logo-options.png">
+            </picture>
           </div>
        <!-- typeface-->
          <div class="typeface-back">
-           <img id="typeface-mobile" src="images/typeface-mobile.png">
-           <img id="typeface-desktop" src="images/typeface.png">
+           <picture>
+               <source media="(max-width: 899px)" srcset="images/typeface-mobile.png">
+               <source media="(min-width: 900px)" srcset="images/typeface.png">
+               <img id="typeface-desktop" src="images/typeface.png">
+           </picture>
          </div>
        <!-- color palette-->
          <div class="palette-back">
            <h4>Color Palette</h4>
-           <img id="palette-mobile" src="images/color-palette-mobile.png">   
-           <img id="palette-desktop" src="images/color-palette-desktop.png"> 
+           <picture>
+              <source media="(max-width: 768px)" srcset="images/color-palette-mobile.png">
+              <source media="(min-width: 769px)" srcset="images/color-palette-desktop.png">
+              <img id="palette-desktop" src="images/color-palette-desktop.png"> 
+           </picture>
          </div>  
+         <div class="logo-back">
            <p id="i-brought" class="case-study-text">I brought some selected colors into the logo and produced the following outcome:</p>
-         <img id="cubby-logo" src="images/cubby-logo.png">
-         <a href="https://drive.google.com/file/d/18pswW45OV6qCPpx237fqyicvtUP3CgEb/view?usp=sharing" class="green-button">View Complete Style Guide</a>
-       
+         <div class="logo-grid">
+            <img id="cubby-logo" src="images/cubby-logo.png">
+            <a href="https://drive.google.com/file/d/18pswW45OV6qCPpx237fqyicvtUP3CgEb/view?usp=sharing" class="green-button style-guide">View Complete Style Guide</a>
+         </div>
+        </div>
      </section>
 <!-- Visual Design-->
      <section>
        <div class="vis-design">
-       <div class="section-label branding">
+       <div class="section-label v-design">
           <span class="label">Visual Design</span>
          </div>
            <h4>Mockups</h4>
@@ -341,20 +354,22 @@
            <div class="mockups-section">
              <div class="mockups">
              <img class="img-mockups" src="images/mockup-1.png">
-             <p class="img-label">Landing page + sign up</p>
+             <img id="desktop-mockup" src="images/mockup-group.png">
+             <p class="img-label mockup-label">Landing page + sign up</p>
            </div>
            <div class="mockups">
              <img class="img-mockups" src="images/mockup-2.png">
-             <p class="img-label">User dashboard</p>
+             <p class="img-label mockup-label">User dashboard</p>
            </div>
            <div class="mockups">
               <img id="mobile-mockup" src="images/mockup-3.png">
-              <p class="img-label">Mobile sign in page</p>
+              <p class="img-label mockup-label">Mobile sign in page</p>
             </div>
           </div>
-          </div>
-          <a href="" class="green-button">View All Mockups</a>
-       <div class="preference-tests">
+          <a href="" id="mu-button" class="green-button wireframes-mockups-button">View All Mockups</a>
+        </div>
+          <div class="mockup-bottom">
+          <div class="preference-tests">
            <h4>Preference Tests</h4>
            <p class="case-study-text">As my wireframes became more polished, I ran some preference tests to help me decide on some details in my design.
              Here are two of the images that I showed testers:</p>
@@ -372,6 +387,7 @@
              was trying to achieve, and it gave the whole interface a modern and clean look.</p>
          </div>
        </div>
+      </div>
        <div class="prototypes">
            <h4 id="prototypes">Prototypes</h4>
            <p id="prototypes-summary" class="case-study-text">After my mockups were completed, I used the prototyping tool on Figma to connect them to one another thereby
@@ -388,9 +404,9 @@
          <div class="testing-back">
               <ol>
                 <li id="desktop-mobile-card">Desktop</li>
-                <div class="table">
-                    <li class="list">1. Change the combination of typefaces on the dashboard cards to be only one typeface to help improve readability</li> <br />
-                    <li class="list">2. Swap out dividing line of the “Browse” window on the desktop dashboard for a solid color in that section</li>
+                <div class="h-list">
+                    <li class="ut2">1. Change the combination of typefaces on the dashboard cards to be only one typeface to help improve readability</li> <br />
+                    <li class="ut2">2. Swap out dividing line of the “Browse” window on the desktop dashboard for a solid color in that section</li>
                  </div>
               </ol>
               <div class="ut-2-grid">
@@ -401,9 +417,11 @@
               </div>
               <ol>
                 <li id="desktop-mobile-card">Mobile</li>
-                <li class="list">1. Change the combination of typefaces on the dashboard cards to be only one typeface to help improve readability</li> <br />
-                <li class="list">2. Modify the toolbar at the bottom of the mobile dashboard so that it doesn’t look dated</li>
-              </ol>
+                <div class="h-list">
+                    <li class="ut2">1. Change the combination of typefaces on the dashboard cards to be only one typeface to help improve readability</li> <br />
+                    <li class="ut2">2. Modify the toolbar at the bottom of the mobile dashboard so that it doesn’t look dated</li>
+                </div>
+                  </ol>
               <div class="ut-2-grid ut-mobile">
                   <p class="img-label-2">Before</p>
                   <img class="mobile-testing" src="images/before-mobile.png">
