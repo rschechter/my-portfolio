@@ -651,10 +651,11 @@ a.button{
   position: relative;
   width: 100%;
 }
+
 #info-arch{
   margin: 0 2rem;
   padding-top: 4rem;
-}
+} 
 
 .wireframes{
   padding: 3.75rem 0 3rem 0;
@@ -1318,32 +1319,31 @@ h4{
 
 .info-arch{
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-column-gap: 3rem; 
-  padding-bottom: 13rem;
+  grid-template-columns: 1fr;
+  padding-bottom: 4rem;
   padding-top: 2rem;
-}
+} 
 
 .info-arch a {
-  grid-column-start: 2;
-  margin: 0 7rem 2rem 2rem;
+  /* margin: 0 7rem 2rem 2rem; */
   height: 25px;
-}
+} 
 
-#user-stories-flows{
+/* #user-stories-flows{
   grid-column-start: 1;
   grid-column-end: 3;
 }
+*/
 
 #info-arch-summary{
-  grid-row-start: 2;
-  grid-row-end: 4;
-  padding-bottom: 3rem;
+  margin-left: 11rem;
+  margin-right: 11rem;
+  width: auto;
 }
 
 #info-arch{
   padding-top: 13rem;
-}
+} 
 
 
 
@@ -1471,27 +1471,19 @@ h4{
 
 .prototypes{
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-column-gap: 3rem; 
+  grid-template-columns: 1fr;
   padding-bottom: 7rem;
   padding-top: 8rem;
 }
 
 .prototypes a{
-  grid-column-start: 2;
-  margin: 0 7rem 2rem 2rem;
   height: 25px;
 }
 
-#prototypes{
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
 #prototypes-summary{
-  grid-row-start: 2;
-  grid-row-end: 4;
   padding-bottom: 3rem;
+  margin-right: 11rem;
+  width: auto;
 }
 
 ol{
@@ -1616,7 +1608,65 @@ ol{
   margin-top: 5rem;
 }
 }
+@media screen and (min-width: 1100px){
+.info-arch{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 3rem; 
+  padding-bottom: 13rem;
+  padding-top: 2rem;
+}
+.info-arch a {
+  grid-column-start: 2;
+  margin: 0 7rem 2rem 2rem;
+  height: 25px;
+}
+#user-stories-flows{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 
+#info-arch-summary{
+  grid-row-start: 2;
+  grid-row-end: 4;
+  padding-bottom: 3rem;
+  margin-right: 0rem;
+  width: 60rem;
+}
+
+#info-arch{
+  padding-top: 13rem;
+}
+
+
+.prototypes{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 3rem; 
+  padding-bottom: 7rem;
+  padding-top: 8rem;
+}
+
+.prototypes a{
+  grid-column-start: 2;
+  margin: 0 7rem 2rem 2rem;
+  height: 25px;
+}
+
+#prototypes{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#prototypes-summary{
+  grid-row-start: 2;
+  grid-row-end: 4;
+  padding-bottom: 3rem;
+  margin-right: 0;
+  width: 60rem;
+}
+
+}
 /* about page MQ */
 @media screen and (min-width: 1150px){
 .about{
