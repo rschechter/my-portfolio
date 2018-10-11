@@ -1,7 +1,7 @@
 html{
   background-color: #fff;
   font-size: 10px;
-  /* background-color: #FAEFED; */
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -60,6 +60,22 @@ html{
   font-style: normal;
 }
 
+
+.pink-back{
+  background-color: #BA808C;
+  background-image: url(../images/pink-curve.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 101vw;
+  height: 68rem;
+}
+
+.home{
+  color: white;
+}
+
+
+
 /* nav bar - across all pages */
 .container{
   margin: 0 auto;
@@ -71,13 +87,23 @@ nav{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 2rem;
   padding-bottom: 4rem;
+  padding-top: 2rem;
 }
 
 .logo {
   padding: 2rem 0;
 }
+
+.logo a{
+  color: #BA808C;
+  font-family: 'Gravity-regular';
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
 
 .menu-bar li {
   display: inline;
@@ -85,7 +111,7 @@ nav{
 }
 
 .menu-bar li a {
-  color: #FF5A89;
+  color: #BA808C;
   font-family: 'Gravity-regular';
   font-size: 1.6rem;
   padding-top: 1.4rem;
@@ -93,18 +119,22 @@ nav{
 }
 
 .menu-bar li a:hover{
-  color: #FF5A89;
+  color: #BA808C;
   text-decoration: underline;
 }
 
 /* footer - across all pages */
 
-#contact-footer{
-  color: #FF5A89;
-  font-family: 'Gravity-book';
+footer{
+  background-color: #ECE4E4;
+}
+
+.contact-footer{
+  color: #BA808C;
+  font-family: 'Gravity-regular';
   font-size: 2.8rem;
   padding-bottom: .25rem;
-  padding-top: 8rem;
+  padding-top: 5rem;
   text-align: center;
   width: 100%;
 }
@@ -121,31 +151,33 @@ a { /* social icons */
   padding: 1rem 1.4rem;
 } 
 
-#copywrite-info{
-  color: #FF5A89;
-  /* #BA808C */
-  font-family: 'Gravity-regular';
+.copywrite-info{
+  color: #BA808C;
+  font-family: 'Gravity-bold';
   font-size: 1.2rem;
   padding: 2rem 0;
   text-align: center;
   width: 100%;
 }
 
+.home-2{
+  color: #BA808C
+}
 /* home page body */
 
 h1{ /* Hi, I'm Rachel! */
-  color: #FF5A89;
+  color: #fff;
   font-family: 'Gravity-bold';
   font-size: 4.5rem;
-  padding-top: 7rem;
+  padding-top: 3.5rem;
   text-align: left;
 }
 
 h2{ /* slogan */
-  color: #FF5A89;
+  color: #fff;
   font-family: 'Gravity-book';
   font-size: 2.7rem;
-  line-height: 3rem;
+  line-height: 3.2rem;
   padding: 2rem 0;
   text-align: left;
 }
@@ -153,44 +185,43 @@ h2{ /* slogan */
 br{
   display: none;
 }
-
+br-1{
+  display: none;
+}
 h3{ /* currently based in NYC */
-  color: #FF5A89;
-  /* color: #BA808C; */
+  color: #fff;
   font-family: 'Gravity-book';
   font-size: 2.1rem;
   line-height: 120%;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   padding-top: 2rem;
   text-align: left;
 }
 
 /* general middle section */
 .case-studies{
-  background-color:  #284078;
-  background-image: url(../images/curve-2.svg);
+  /* background-color:  #284078; */
+  /* background-image: url(../images/curve-2.svg); */
+  background-position: center -14.75vw;
   background-repeat: no-repeat; 
   background-size: 100%;
-  background-position: center -14.75vw;
-  padding-bottom: 3rem;
-  padding-top: 10vw;
+  padding-bottom: 8rem;
+  padding-top: 11vw;
   position: relative;
   width: 100%;
-  z-index: 1;
 }
 
 svg.curve {
   position: absolute;
   top: -21vw;
   width: 101vw;
-  z-index: 2;
 }
 
 .arrow{
   display: block;
   margin: 0 auto;
-  padding-bottom: 15px;
-  z-index: 3;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
 }
 
 /* left content */
@@ -201,7 +232,7 @@ svg.curve {
 }
 
 .project-name{
-  color: #fff;
+  color: #284078;
   font-family: 'Gravity-book';
   font-size: 5.3rem;
   text-align: center;
@@ -209,7 +240,7 @@ svg.curve {
 }
 
 .cubby-description{
-  color: #fff;
+  color: #284078;
   font-size: 1.9rem;
   font-family: 'Gravity-book';
   line-height: 135%;
@@ -221,16 +252,21 @@ svg.curve {
 a.button{
   background-color: #fff;
   border-radius: 8px;
+  border: 1px solid #284078;
   color: #284078; 
   display: inline-block;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-regular';
   font-size: 1.8rem;
-  /* margin: 0 auto; */
   padding: 15px 35px;
   text-decoration: none;
-  width: 160px;
+  width: 162px;
+  transition-duration: 0.4s;
 }
 
+a.button:hover{
+  background-color: #284078; 
+  color: white;
+}
 /* right content */
 
 .right-content{ /* section Cubby image */
@@ -239,8 +275,8 @@ a.button{
 }
 .mobile-landing{
   display: block;
-  width: 100%; 
   padding-top: 3rem;
+  width: 100%; 
 }
 
 .desktop-landing{
@@ -263,8 +299,9 @@ a.button{
                                       font-family: 'Gravity-italic';
                                       font-size: 2.4rem;
                                       line-height: 130%;
-                                      padding-top: 2rem;
                                       padding-bottom: 1rem;
+                                      padding-top: 2rem;
+                                      color: #BA808C;
                                     }
 
                                     #speaker{
@@ -273,6 +310,7 @@ a.button{
                                         padding-bottom: 2rem;
                                         width: 100%;
                                         text-align: right;
+                                        color: #BA808C;
                                     }
 
                                     .section-tagline{
@@ -285,14 +323,17 @@ a.button{
                                     .about-body-copy{
                                         font-family: 'Gravity-book';
                                         font-size: 1.8rem;
+                                        line-height: 140%;
                                         text-align: left;
                                         padding: 1rem 0;
-                                        line-height: 140%;
+                                    }
+                                    .eight{
+                                      padding-bottom: 3rem;
                                     }
 
+
+
 /* case study styles */
-
-
 
 /* hero */
 
@@ -346,6 +387,7 @@ a.button{
   .roles-deliverables-tools{
   background-color: #C9EFED;
   }
+
   .rdt-titles{
   color: #000;
   font-family: 'Gravity-book';
@@ -434,15 +476,17 @@ a.button{
   .disc-image-overlap{
     background-image: url(../images/discovery-phase-mobile.png);
     background-repeat: no-repeat;
-    padding: 4rem 0;
     background-size: cover;
+    padding: 4rem 0;
   }
+
   #disc-phase{
     padding-bottom: 5rem;
     margin: 0 auto;
     top: 55px;
     width: 100%;
   }
+
   #user-survey{
     top: 210px;
     width: 100%;
@@ -463,8 +507,8 @@ a.button{
     font-family: 'Gravity-italic';
     font-size: 1.8rem;
     line-height: 160%;
-    padding: .7rem 0;
     margin: 0 2rem;
+    padding: .7rem 0;
     text-align: left;
   }
   
@@ -477,26 +521,28 @@ a.button{
     display: none;
   }
   .survey-results{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 35px;
-    grid-column-gap: 15px;
     background-image: linear-gradient(#153055, #2B7093);
+    display: grid;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 3.5rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 1rem;
   }
   
   .percent-data{
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   
   .percent{
     color: #fff;
     font-family: 'Gravity-bookitalic';
     font-size: 4rem;
-    text-align: left; 
     padding-bottom: 1rem;
+    text-align: left; 
   }
+
   .percent-caption{
     color: #fff;
     font-family: 'Gravity-bookitalic';
@@ -508,9 +554,9 @@ a.button{
   /* percentages */
   
   #num-56{
+    grid-column-start: 2;
     grid-row-start: 3;
     grid-row-end: 5;
-    grid-column-start: 2;
   }
   
   #num-25{
@@ -532,14 +578,14 @@ a.button{
   
   #survey-caption{
     color: white;
-    margin: 0 2rem;
     font-family: 'Gravity-book';
     font-size: 2rem;
-    line-height: 120%;
-    padding-top: 3rem;
-    text-align: center;
     grid-column-start: 1;
     grid-column-end: 3;
+    line-height: 120%;
+    margin: 0 2rem;
+    padding-top: 3rem;
+    text-align: center;
   }
   
   #survey-button{
@@ -562,14 +608,14 @@ a.button{
   
   
   .persona-titles{
-  background-color: #A5EDDD;
-  color: #000;
-  font-family: 'Gravity-bookitalic';
-  font-size: 1.8rem;
-  letter-spacing: .4px;
-  line-height: 130%;
-  padding: 2.5rem 3rem 10rem 3rem;
-  text-align: center;
+    background-color: #A5EDDD;
+    color: #000;
+    font-family: 'Gravity-bookitalic';
+    font-size: 1.8rem;
+    letter-spacing: .4px;
+    line-height: 130%;
+    padding: 2.5rem 3rem 10rem 3rem;
+    text-align: center;
   }
   
   .regular-bold-title{
@@ -591,12 +637,12 @@ a.button{
   width: 100%;
 }
 .marcus-samantha{
- position: relative;
- width: 150px;
- height: 150px;
- display: block;
- top: -74px;       
- margin: 0 auto; 
+  display: block;
+  height: 150px;
+  margin: 0 auto; 
+  position: relative;
+  top: -74px; 
+  width: 150px;
 }
 #marcus-samantha-summary{
   margin-top: -4rem;
@@ -626,24 +672,22 @@ a.button{
 .comp-analysis-cards{
   background-color: #DCF8F2;
   background-image: url(../images/ca-curve.svg);
+  background-position: center 0vw;
   background-repeat: no-repeat; 
   background-size: 100%;
-  background-position: center 0vw;
   padding-bottom: 3rem;
   position: relative;
   width: 100%;
 }
 
 .card{
-  text-align: center;
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 7px 2px rgba(0,0,0,0.2);
-  padding: 3rem 0;
   margin: 2rem 2rem;
-  background-color: white;
+  padding: 3rem 0;
+  text-align: center;
 }
-
-
 
 /* info arch overlap */
 .info-arch-overlap{
@@ -664,9 +708,9 @@ a.button{
 .wireframes-main{
   background-color: #F7EFFF;
   background-image: url(../images/wf-curve.svg);
+  background-position: center bottom;
   background-repeat: no-repeat; 
   background-size: 100%;
-  background-position: center bottom;
   padding-bottom: 1.15rem;
 }
 
@@ -682,7 +726,7 @@ a.button{
 }
 
 #wf-1{
- margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 #mobile-wireframe-image{
@@ -694,9 +738,9 @@ a.button{
   color: #000;
   font-family: 'Gravity-book';
   font-size: 1.6rem;
+  margin: 0 2rem;
   padding: .5rem 0 3rem 0;
   text-align: center;
-  margin: 0 2rem;
 }
 
 
@@ -714,41 +758,42 @@ a.button{
 .cards-back{
   background-color: #6B7CAA;
   background-image: url(../images/ut1-curve.svg);
+  background-position: center 66.55rem;
   background-repeat: no-repeat; 
   background-size: 100%;
-  background-position: center 66.55rem;
-  position: relative;
   margin-bottom: -9rem;
+  position: relative;
 }
+
 .test-result-card{
+  align-items: center;
   background-color: #A5EDDD;
   border-radius: 8px;
   box-shadow: 0 0 10px .5px rgba(0,0,0,0.2);
-  padding: 3rem 0;
-  margin: 2rem 2rem;
-  height: 130px;
   display: flex;
+  height: 130px;
   justify-content: center;
-  align-items: center;
+  margin: 2rem 2rem;
+  padding: 3rem 0;
   position: relative;
   top: -10rem;
 }
+
 .user-test-results{
-  text-align: center;
-  padding-bottom: 0;
   color: #000;
   font-family: 'Gravity-book';
   font-size: 1.8rem;
   line-height: 140%;
   padding: 2rem 1rem;
+  text-align: center;
 }
 
 /* Branding & Identity */
 .branding-overlap{
   background-image: url(../images/ut1-curve2.svg);
+  background-position: center -13vw;
   background-repeat: no-repeat; 
   background-size: 100%;
-  background-position: center -13vw;
   padding-bottom: 3rem;
   position: relative;
   width: 100%;
@@ -756,38 +801,38 @@ a.button{
 
 #brand{
   background-image: url(../images/branding-group-desktop.png);
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
 }
 
 .branding{
-  text-align: center;
-  padding-top: 12rem;
   padding-bottom: 4rem;
+  padding-top: 12rem;
+  text-align: center;
 }
 
 #logo-section{
   background-image: url(../images/designing-logo-back.png);
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
   padding-bottom: 4rem;
 }
 
 /* overlap */
 
 .branding-text{
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px .5px rgba(0,0,0,0.2);
   color: #284078;
   font-family: 'Gravity-regular';
   font-size: 1.8rem;
   line-height: 130%;
-  text-align: left;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px .5px rgba(0,0,0,0.2);
   margin: 2rem 2rem;
   padding: 1.5rem;
+  text-align: left;
 }
 
 #i-decided{
@@ -798,7 +843,6 @@ a.button{
 #designing-logo{
   padding-top: 10rem;
 } 
-
 
 #logo-options{
   display: block;
@@ -816,17 +860,15 @@ a.button{
 } 
 
 .typeface-back{
-  /* background-color: #A5EDDD; */
   background-image: url(../images/typeface-curve.svg);
+  background-position: center bottom;
   background-repeat: no-repeat; 
   background-size: cover;
-  background-position: center bottom;
   padding-bottom: 1.15rem;
   padding-top: 12.5vw;
   position: relative;
   width: 100%;
 }
-
 
 #palette-mobile{
   display: block;
@@ -840,17 +882,17 @@ a.button{
 
 .palette-back{
   background-color: #F7EFFF;
-  padding-top: 5rem;
   background-image: url(../images/palette-curve.svg);
+  background-position: center bottom;
   background-repeat: no-repeat; 
   background-size: 100%;
-  background-position: center bottom;
   padding-bottom: 1.15rem;
+  padding-top: 5rem;
 }
 
 #i-brought{
-  padding-top: 2rem;
   margin-top: 5rem;
+  padding-top: 2rem;
 }
 
 #cubby-logo{
@@ -870,12 +912,12 @@ a.button{
 
 .vis-design{
   background-color: #F7EFFF;
-  padding-top: 10rem;
   background-image: url(../images/visual-curve.svg);
+  background-position: center -1rem;
   background-repeat: no-repeat; 
   background-size: 100%;
-  background-position: center -1rem;
   padding-bottom: 1.15rem;;
+  padding-top: 10rem;
   position: relative;
   width: 100%;
 }
@@ -883,15 +925,18 @@ a.button{
 .v-design{
   padding-top: 0;
 }
+
 .img-mockups{
   display: block;
   width: 100%;
   margin: 0 auto;
 }
+
 #mobile-mockup{
   display: block;
   margin: 0 auto;
 }
+
 #desktop-mockup{
   display: none;
 }
@@ -905,42 +950,43 @@ a.button{
 }
 .mockup-bottom{
   background-image: url(../images/wf-curve.svg);
+  background-position: center top;
   background-repeat: no-repeat; 
   background-size: 100%;
-  background-position: center top;
 }
 
 .pref{
   display: block;
-  width: 100%;
   padding: 3rem 0;
+  width: 100%;
 }
+
 /* .pref-buttons */
+
 #pref-label{
   padding-top: 3rem;
 }
+
 .prototypes{
   background-color: #F7EFFF;
   padding: 3rem 0;
 }
 
 .user-testing-2{
-  padding-top: 10rem;
-  padding-bottom: 2rem;
+  padding-top: 5rem;
 }
 
 ol{
-  margin: 2rem 2rem;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 7px 2px rgba(0,0,0,0.2);
-  padding: 2rem 2rem;
   color: #000;
   font-family: 'Gravity-book';
   font-size: 1.8rem;
   line-height: 140%;
+  margin: 2rem 2rem;
+  padding: 2rem 2rem;
 }
-
 
 #desktop-mobile-card{
   color: #000;
@@ -965,10 +1011,13 @@ ol{
   font-family: 'Gravity-book';
   font-size: 1.6rem;
   padding: 2rem 0 1rem 0;
-  text-align: center;
   margin: 0 2rem;
+  text-align: center;
 }
 
+.ut2{
+  padding-bottom: 1rem;
+}
 
 #to-improve{
   padding-top: 3rem;
@@ -977,11 +1026,11 @@ ol{
 .testing-back{
   background-color: #DCF8F2;
   background-image: url(../images/ut2-curve.svg);
+  background-position: center -1rem;
   background-repeat: no-repeat; 
   background-size: 100%;
-  background-position: center -1rem;
+  padding-bottom: 1.15rem;
   padding-top: 7rem;
-  padding-bottom: 1.15rem;;
   position: relative;
   width: 100%;
 }
@@ -1010,21 +1059,26 @@ ol{
   padding-bottom: 3rem;
   text-align: left;
 }
+
 .under-cards{
   background-color: #6B7CAA;
-  position: relative;
   color: #fff;
   font-family: 'Gravity-book';
   font-size: 1.8rem;
   line-height: 130%;
   padding: 2rem;
+  position: relative;
   text-align: left;
 }
 
-
-
-
-
+@media screen and (min-width: 510px) {
+.pink-back{
+  height: 66rem;
+}
+h1{
+  padding-top: 7rem;
+}
+}
 
 @media screen and (min-width: 768px) {
   
@@ -1034,7 +1088,12 @@ ol{
     justify-content: space-between;
     padding: 2rem 4rem 4rem 4rem;
   }
-
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
   .menu-bar{
     color: #D02E77;
     display: inline;
@@ -1046,16 +1105,16 @@ ol{
 /* landing page MQ */
    .wrapper{
     align-items: center;
+    /* background-color: #284078;  */
     display: grid;
     grid-gap: 90px;
     grid-template-columns: 1fr 2fr; 
-    background-color: #284078; 
    }
 
   .project-name{
     text-align: right;
-    padding: 0rem;
     margin: 0;
+    padding: 0rem;
   }
 
   .cubby-description{
@@ -1064,17 +1123,18 @@ ol{
   }
 
   br{
-    display: block;
+    display: none;
   }
-
+ 
   a.button{
     float: right;
   }
 
   .right-content {
-  
   }
-
+  .arrow{
+    padding-top: 17rem;
+  }
   .mobile-landing{
     display: none;
   }
@@ -1093,16 +1153,17 @@ ol{
 
                   .wrapper-2{
                     display: grid;
-                    grid-template-columns: 1fr 3fr;
                     grid-column-gap: 2rem;
                     grid-row-gap: 2rem;
-                    
+                    grid-template-columns: 1fr 3fr;
+                    padding-bottom: 5rem;
                   }
 
                   .about{
                     margin: 0 auto;
                     width: 70%;
                   }
+
                   .about-body-copy{
                     padding: 0;
                   }
@@ -1148,7 +1209,6 @@ ol{
                     grid-column-start: 2;
                     grid-row-start: 4;
                     padding-top: 1rem;
-
                   }
 
                   .eight{
@@ -1162,6 +1222,7 @@ ol{
 
                   #speaker{
                     font-size: 2.5rem;
+                    padding-bottom: 11rem;
                   }
 
 /* cubby MQ */
@@ -1175,17 +1236,20 @@ ol{
 }
 
 .cubby-description-2{
-  margin: 0 18rem;
   font-size: 2.7rem;
+  margin: 0 18rem;
 }
+
 .case-study-text{
   margin-left: 11rem;
   width: 60rem;
 }
+
 .case-study-text-white{
   margin-left: 11rem;
   width: 60rem;
 }
+
 /* RDT and problem/solution */
 
 .roles-deliverables-tools{
@@ -1223,27 +1287,29 @@ li.survey{
 }
 .survey-results{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 7rem;
   grid-column-gap: 16rem; 
+  grid-row-gap: 7rem;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 7rem;
 }
 
 #survey-caption{
-  grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 4;
+  grid-row-start: 1;
 }
+
 #survey-button{
   grid-column-end: 4
 }
 /* percentages */
 
 #num-56{
+  grid-column-start: 1;
   grid-row-start: 3;
   grid-row-end: 4;
-  grid-column-start: 1;
 }
+
 #num-81{
   grid-column-start: 2;
   grid-row-start: 2;
@@ -1273,22 +1339,25 @@ li.survey{
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 5rem;
-  position: relative;
   margin-bottom: -17rem;
+  position: relative;
   top: -17rem;
 }
 .personas{
+  background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 7px 2px rgba(0,0,0,0.2);
   margin: 0 4rem;
-  background-color: white;
 }
+
 .persona-titles{
   border-radius: 10px 10px 0 0;
 }
+
 h4{
   margin: 0 11rem;
 }
+
 /* comp analysis */
 
 .comp-analysis{
@@ -1325,15 +1394,8 @@ h4{
 } 
 
 .info-arch a {
-  /* margin: 0 7rem 2rem 2rem; */
   height: 25px;
 } 
-
-/* #user-stories-flows{
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-*/
 
 #info-arch-summary{
   margin-left: 11rem;
@@ -1345,25 +1407,24 @@ h4{
   padding-top: 13rem;
 } 
 
-
-
 /* branding */
 
 .branding{
-  text-align: left;
   margin-left: 11rem;
   padding-top: 18rem;
   padding-bottom: 0;
+  text-align: left;
 }
 
 .branding-text{
   background: none;
   box-shadow: none;
   margin-left: 11rem;
-  width: 40rem;
-  padding: 0 0 5rem 0;
   margin-top: 15rem;
+  padding: 0 0 5rem 0;
+  width: 40rem;
 }
+
 .i-wanted{
   margin-top: 5rem;
   padding-bottom: 15rem;
@@ -1373,10 +1434,11 @@ h4{
 #logo-section{
   padding-bottom: 0;
 }
+
 .under-cards{
+  padding-bottom: 0;
   padding-left: 55%;
   padding-right: 5%;
-  padding-bottom: 0;
 }
 
 .logo-wrapper{
@@ -1387,10 +1449,10 @@ h4{
 
 .i-eventually{
   align-self: center;
-  width: 50rem;
-  margin-left: 6rem;
   grid-column-start: 2;
   grid-row-start: 1;
+  margin-left: 6rem;
+  width: 50rem;
 }
 
 #palette-mobile{
@@ -1402,10 +1464,10 @@ h4{
   margin: 0 auto;   
 }
 .v-design{
-  padding-top: 3rem;
   padding-bottom: 6rem;
-  text-align: left;
+  padding-top: 3rem;
   margin-left: 11rem;
+  text-align: left;
 }
 
 .wireframes-image{
@@ -1444,8 +1506,8 @@ h4{
 }
 
 .style-guide{
-  height: 25px;
   align-self: center;
+  height: 25px;
 }
 
 .img-mockups{
@@ -1458,13 +1520,15 @@ h4{
 
 #desktop-mockup{
   display: block;
-  width: 95%;
   margin: 0 auto;
   padding: 3rem 0;
+  width: 95%;
 }
+
 .mockup-label{
   display: none;
 }
+
 #pref-label{
   display: none;
 }
@@ -1486,9 +1550,14 @@ h4{
   width: auto;
 }
 
+.user-testing-2{
+  padding-bottom: 2rem;
+  padding-top: 10rem;
+}
+
 ol{
-  width: 60rem;
   margin: 14rem auto 7rem auto;
+  width: 60rem;
 }
 
 .list{
@@ -1518,14 +1587,15 @@ ol{
 }
 
 #to-improve{
-  width: auto;
   margin-right: 11rem;
   padding: 6rem 0 4rem 0;
-}
-.concl-text{
   width: auto;
+}
+
+.concl-text{
   margin-right: 11rem;
   padding-bottom: 7rem;
+  width: auto;
 }
 
 #conclusion-label{
@@ -1536,30 +1606,29 @@ ol{
 
 
 /* landing page MQ */
-@media screen and (min-width: 440px){
+/* @media screen and (min-width: 440px){ */
   /* .mobile-landing{
     width: initial;
   } */
+/* } */
+/* 
+@media screen and (min-width: 510px){
+.pink-back{
+  height: 66rem;
+}*/
+} 
+
+ @media screen and (min-width: 856px){
+  br-1{
+    display: block;
+  }
 }
-
-@media screen and (min-width: 600px){
-  .desktop-testing{
-       margin: 0 auto;
-       width: 100%
-   }
-   
-   .mobile-testing{
-       margin: 0 auto;
-       width: 100%;
-   }
- }
-
  @media screen and (min-width: 890px){
 
   #typeface-desktop{
     display: block;
-      margin: 0 auto; 
-      width: 85%;   
+    margin: 0 auto; 
+    width: 85%;   
   } 
 } 
 
@@ -1567,19 +1636,17 @@ ol{
   .cards-back{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
     margin-bottom: -9rem;
+    width: 100%;
   }
 
   .pref{
     background-color: #fff;
-    display: block;
-    /* margin: 0 auto; */
     border-radius: 10px;
     box-shadow: 0 0 7px 2px rgba(0,0,0,0.2);
+    display: block;
     padding: 2rem 0;
     margin: 0 auto;
-    /* width: auto; */
 }
 
 .pref-buttons{
@@ -1588,39 +1655,45 @@ ol{
 }
 
 .pref-cards{
-    grid-row-start: 2;
-    grid-row-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .pref-text{
-  margin-left: 0;
-  width: auto;
   color: white;
   font-family: 'Gravity-book';
+  margin-left: 0;
+  width: auto; 
 }
 
 .pref-grid{
+  background-color: #6B7CAA;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 5rem;
-  background-color: #6B7CAA;
   padding: 6rem 4rem;
   margin-top: 5rem;
 }
 }
+
+
 @media screen and (min-width: 1100px){
+#quote{
+  text-align: center;
+}
 .info-arch{
   display: grid;
-  grid-template-columns: 3fr 1fr;
   grid-column-gap: 3rem; 
+  grid-template-columns: 3fr 1fr;
   padding-bottom: 13rem;
   padding-top: 2rem;
 }
 .info-arch a {
   grid-column-start: 2;
-  margin: 0 7rem 2rem 2rem;
   height: 25px;
+  margin: 0 7rem 2rem 2rem;
 }
+
 #user-stories-flows{
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1629,8 +1702,8 @@ ol{
 #info-arch-summary{
   grid-row-start: 2;
   grid-row-end: 4;
-  padding-bottom: 3rem;
   margin-right: 0rem;
+  padding-bottom: 3rem;
   width: 60rem;
 }
 
@@ -1638,19 +1711,18 @@ ol{
   padding-top: 13rem;
 }
 
-
 .prototypes{
   display: grid;
-  grid-template-columns: 3fr 1fr;
   grid-column-gap: 3rem; 
+  grid-template-columns: 3fr 1fr;
   padding-bottom: 7rem;
   padding-top: 8rem;
 }
 
 .prototypes a{
   grid-column-start: 2;
-  margin: 0 7rem 2rem 2rem;
   height: 25px;
+  margin: 0 7rem 2rem 2rem;
 }
 
 #prototypes{
@@ -1661,12 +1733,13 @@ ol{
 #prototypes-summary{
   grid-row-start: 2;
   grid-row-end: 4;
-  padding-bottom: 3rem;
   margin-right: 0;
+  padding-bottom: 3rem;
   width: 60rem;
 }
 
 }
+
 /* about page MQ */
 @media screen and (min-width: 1150px){
 .about{
