@@ -106,6 +106,12 @@ nav{
   align-items: center;
 }
 
+.logo a span{
+  display: none;
+}
+.logo a img{
+  margin-right: 0;
+}
 
 .menu-bar li {
   display: inline;
@@ -124,6 +130,21 @@ nav{
   color: #BA808C;
   text-decoration: underline;
 }
+
+body#cubby .logo a,
+body#cubby .menu-bar li a {
+  color: #284078;
+}
+
+body#index .logo a,
+body#index .menu-bar li a {
+  color: #fff;
+}
+
+/* body#about .logo a,
+body#about .menu-bar li a {
+  color:
+} */
 
 /* footer - across all pages */
 
@@ -1107,11 +1128,13 @@ h1{
     padding: 2rem 4rem 4rem 4rem;
   }
 
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+  .logo a span{
+    display: inline;
   }
+  .logo a img{
+    margin-right: 2rem;
+  }
+
   .menu-bar{
     color: #D02E77;
     display: inline;
@@ -1120,6 +1143,16 @@ h1{
     text-align: right;
   }
 
+  body#cubby nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(255,255,255, 0.8);
+    padding: 0rem 4rem 0rem 4rem;
+  }
+  
+  .main{
+    padding-top: 20rem;
+  }
 /* landing page MQ */
    .wrapper{
     align-items: center;
