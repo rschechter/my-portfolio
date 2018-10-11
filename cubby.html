@@ -7,27 +7,28 @@
   <!--<link href="" rel="stylesheet">-->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="my-portfolio/cubby.js">
  </head>
  <body>
 <!-- Nav Bar-->
-    <nav>
-      <div class="logo">
-          <a href="index.html"><img src="images/rb-logo-2.png"></a>
-      </div>
-      <div class="menu-bar">
-        <ul>
-          <li>
-          <a href="cubby.html" class="button-2">WORK</a>
-          </li>
-          <li>
-          <a href="about.html" class="button-2">ABOUT</a>
-          </li>
-          <li>
-          <a href="documents/bloc-resume.pdf" class="button-2">RESUME</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<nav id="navbar">
+    <div class="logo">
+       <a href="index.html" style="color: #284078;"><img src="images/rb-logo-blue.svg" style="margin-right: 2rem;">RACHEL BEISER</a>
+     </div>
+    <div class="menu-bar home">
+      <ul>
+        <li>
+         <a href="cubby.html" class="button-2" style="color: #284078;">WORK</a>
+        </li>
+        <li>
+         <a href="about.html" class="button-2" style="color: #284078;">ABOUT</a>
+        </li>
+        <li>
+         <a href="documents/rachelbeiser-bloc-resume.pdf" class="button-2" style="color: #284078;">RESUME</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 <!-- Hero-->
    <header class="main">
      <h1 id="cubby-title">CUBBY</h1>
@@ -80,16 +81,16 @@
             <h3 class="ps">Problem</h3>
             <p class="ps-text-body">The client expressed interest in the cloud storage app market,
             but did not have a clear vision of what they wanted their app to be or even who their target
-            audience is. I needed to figure out a target audience based on gaps in the market, and to
-            create an application that has the correct combination of cloud storage features to satisfy
+            audience was. I needed to figure out a target audience based on gaps in the market and to
+            create an application that had the correct combination of cloud storage features to satisfy
             this group. Some specific features that the client asked to be included were saving existing
             content, creating original content, organizing any content, uploading content, and collaboration.</p>
         </div>
         <div class="solution">
             <h3 class="ps">Solution</h3>
-            <p class="ps-text-body">By discovering that students are under-represented in the cloud storage
-              market through user research and a competitive analysis, I was able to create Cubby and include
-              the specific features that the client asked for. Cubby offers students the ability to create and
+            <p class="ps-text-body">Through user research and a competitive analysis, I discovered that students
+               are under-represented in the cloud storage market, so I was able to create Cubby and include the 
+               specific features that the client asked for. Cubby offers students the ability to create and
               share original content, upload and share existing content, and browse for and save existing content
               from the internet. All of these features also allow students to collaborate with their peers and
               teachers by sharing the files, folders, or boards in their Cubby.</p>
@@ -101,7 +102,7 @@
           <h5 id="disc-phase" class="section-label">Discovery <br />Phase</h5>
           <h4 id="user-survey">User Survey</h4>
           <p id="disc-phase-intro-body" class="case-study-text">I began by creating a user survey and distributing it to friends and
-            contacts by posting on social media channels, various Slack groups and sending out some emails.
+            contacts by posting on social media channels, various Slack groups, and sending out some emails.
             My survey reached 60 participants, and my objective with the survey was to learn the following: </p>
        </div>
            <div class="survey-questions">
@@ -166,17 +167,17 @@
                 <p class="persona-titles">Marcus is a 21 year old student in <br class="persona-break" />Philadelphia, PA.</p>
                 <img class="marcus-samantha" src="images/marcus.png" width="50" height="50">
              </div>
-             <p id="marcus-samantha-summary" class="card-text">Marcus is a biology student at a top university and planning on pursuing medicine after graduation. He
-               has a lot going on now - class work, lab work and the medical school application process. He is stressed and has a lot on his plate,
+             <p id="marcus-samantha-summary" class="card-text">Marcus is a biology student at a top university and plans to pursue medicine after graduation. He
+               has a lot going on now - class work, lab work, and the medical school application process. He is stressed and has a lot on his plate,
                and could definitely use a worthwhile and easy solution to help him stay organized and on top of all of his to-dos.</p>
              <p class="regular-bold-title">Goals</p>
              <p class="card-text">1. To be able to organize all of his files and collaborate with classmates on group projects.</p>
-             <p class="card-text">2. To back up his files so that they are sade in case his computer crashes or gets stolen.</p>
+             <p class="card-text">2. To back up his files so that they are safe in case his computer crashes or gets stolen.</p>
              <p class="regular-bold-title">Frustrations</p>
              <p class="card-text">1. He is coming close to his storage capacity in the cloud storage app he uses now and he doesn't
-               want to pay for the more expensive plan with additional storage - he is a student after all!</p>
-             <p class="card-text">2. With the apps he uses, he can see shared files but cannot edit them in real time. He would need to
-               download the file or document, make changes and then upload it again, and he doesn't find this method so practical.</p>
+               want to pay for the more expensive plan with additional storage - he is a student, after all!</p>
+             <p class="card-text">2. With the apps he uses now, he can see shared files but cannot edit them in real time. He would need to
+               download the file or document, make changes, and then upload it again, and he doesn't find this method so practical.</p>
             </div>
          <div class="personas">
             <div class="persona-image-overlap">
@@ -185,10 +186,10 @@
             </div>
             <p id="marcus-samantha-summary" class="card-text">Samantha is a clinical social worker who works in-house at a doctor's office and sees between 5 and 7 patients a day.
             She needs a solution to stay organized and on top of her notes on each client. She’s also expecting her first child and would like a way
-            to organize to-buy baby items and other resources and ideas regarding her upcoming baby.</p>
+            to organize baby items to be purchased as well as other resources and ideas regarding her upcoming baby.</p>
             <p class="regular-bold-title">Goals</p>
             <p class="card-text">1. To organize patient information and make everything easily referenceable and to have backups of her patients’ personal files.</p>
-            <p class="card-text">2. To collect pre-existing content from the internet such as images or articles relating to her personal life (more specifically, her soon-to-be new baby).</p>
+            <p class="card-text">2. To collect pre-existing content from the internet such as images or articles relating to her new baby.</p>
             <p class="regular-bold-title">Frustrations</p>
             <p class="card-text">1. She doesn’t always feel that she is being provided with new content when she’s trying to collect ideas – she seems to be getting a lot of the same results in her searches.</p>
             <p class="card-text">2. Even though she is a working professional, she doesn’t feel that investing in a more expensive storage plan is where she should be putting her money right now.</p>
@@ -212,21 +213,21 @@
            <div class="card">
              <img src="images/pinterest.png">
              <p class="regular-bold-title">Pinterest</p>
-             <p class="card-text">- Primarily used for recreational cloud storage - browsing for and saving information,
+             <p class="card-text">- Primarily used for recreational cloud storage; browsing for and saving information,
                articles, and other forms of inspiration or ideas, with the ability to share saved information with others</p>
-             <p class="card-text">- Used by individuals, or businesses in the commerce industry</p>
+             <p class="card-text">- Used by individuals and businesses in the commerce industry</p>
            </div>
            <div class="card">
              <img src="images/dropbox.png">
              <p class="regular-bold-title">Dropbox</p>
              <p class="card-text">- Primarily used for uploading and sharing files</p>
-             <p class="card-text">- Used by students, professionals and individuals</p>
+             <p class="card-text">- Used by students, professionals, and individuals</p>
            </div>
            <div class="card">
              <img src="images/google-drive.png">
              <p class="regular-bold-title">Google Drive</p>
              <p class="card-text">- Primarily used for creating and sharing original content</p>
-             <p class="card-text">- Used by students, professionals and individuals</p>
+             <p class="card-text">- Used by students, professionals, and individuals</p>
            </div>
          </div>
       </div>
@@ -403,7 +404,7 @@
               <ol>
                 <li id="desktop-mobile-card">Desktop</li>
                 <div class="h-list">
-                    <li class="ut2">1. Change the combination of typefaces on the dashboard cards to be only one typeface to help improve readability</li> <br />
+                    <li class="ut2">1. Change the combination of typefaces on the dashboard cards to be only one typeface to help improve readability</li>
                     <li class="ut2">2. Swap out dividing line of the “Browse” window on the desktop dashboard for a solid color in that section</li>
                  </div>
               </ol>
@@ -416,7 +417,7 @@
               <ol>
                 <li id="desktop-mobile-card">Mobile</li>
                 <div class="h-list">
-                    <li class="ut2">1. Change the combination of typefaces on the dashboard cards to be only one typeface to help improve readability</li> <br />
+                    <li class="ut2">1. Change the combination of typefaces on the dashboard cards to be only one typeface to help improve readability</li>
                     <li class="ut2">2. Modify the toolbar at the bottom of the mobile dashboard so that it doesn’t look dated</li>
                 </div>
                   </ol>
@@ -441,26 +442,25 @@
              that I have gained into future projects.</p>
      </section>
    </main>
-   <footer>
-      <p id="contact-footer">Get in touch!</p>
-      <ul class="social-bar">
-        <li>
-          <a href="mailto:rtschechter@gmail.com" class="social"><img src="images/mail-icon.png"></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/rachelbeiser/" class="social"><img src="images/linkedin.png"></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/r.beiser/" class="social"><img src="images/instagram.png"></a>
-        </li>
-        <li>
-          <a href="https://github.com/rschechter" class="social"><img src="images/github.png"></a>
-        </li>
-      </ul>
-     </div>
-     <div id="copywrite-info">
-       <p>© 2018 Designed and Developed by Rachel Beiser</p>
-     </div>
-  </footer>
+   <footer style="background-color: white;">
+      <p class="contact-footer home-2">Get in touch!</p>
+        <ul class="social-bar">
+          <li>
+            <a href="mailto:rtschechter@gmail.com" class="social"><img src="images/mail-icon.svg"></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rachelbeiser/" class="social"><img src="images/linkedin.svg"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/r.beiser/" class="social"><img src="images/instagram.svg"></a>
+          </li>
+          <li>
+            <a href="https://github.com/rschechter" class="social"><img src="images/github.svg"></a>
+          </li>
+        </ul>
+      <div class="copywrite-info home-2">
+        <p>© 2018 Designed and Developed by Rachel Beiser</p>
+      </div>
+   </footer>
  </body>
 </html>
