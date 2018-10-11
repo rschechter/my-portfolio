@@ -68,6 +68,8 @@ html{
   background-repeat: no-repeat;
   background-size: 101vw;
   height: 68rem;
+  position: relative;
+  z-index: 1;
 }
 
 .home{
@@ -200,15 +202,14 @@ h3{ /* currently based in NYC */
 
 /* general middle section */
 .case-studies{
-  /* background-color:  #284078; */
-  /* background-image: url(../images/curve-2.svg); */
-  background-position: center -14.75vw;
+  background-color: #fff; 
   background-repeat: no-repeat; 
   background-size: 100%;
   padding-bottom: 8rem;
-  padding-top: 11vw;
   position: relative;
+  top: -2px;
   width: 100%;
+  z-index: 2;
 }
 
 svg.curve {
@@ -220,8 +221,8 @@ svg.curve {
 .arrow{
   display: block;
   margin: 0 auto;
-  padding-top: 7rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* left content */
@@ -712,6 +713,8 @@ a.button:hover{
   background-repeat: no-repeat; 
   background-size: 100%;
   padding-bottom: 1.15rem;
+  position: relative;
+  z-index: 1;
 }
 
 #wf-label{
@@ -749,12 +752,18 @@ a.button:hover{
   width: 286px;
 }
 
-#user-testing-1{
-  padding-top: 5rem;
-}
 .user-testing-1{
   padding-bottom: 10rem;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  top: -2px;
 }
+
+#user-testing-1{
+  padding-top: 6rem;
+}
+
 .cards-back{
   background-color: #6B7CAA;
   background-image: url(../images/ut1-curve.svg);
@@ -763,6 +772,7 @@ a.button:hover{
   background-size: 100%;
   margin-bottom: -9rem;
   position: relative;
+  z-index: 3;
 }
 
 .test-result-card{
@@ -888,6 +898,8 @@ a.button:hover{
   background-size: 100%;
   padding-bottom: 1.15rem;
   padding-top: 5rem;
+  position: relative;
+  z-index: 1;
 }
 
 #i-brought{
@@ -905,9 +917,14 @@ a.button:hover{
 }
 
 .logo-back{
+  background-color: white;
   background-image: url(../images/shards-background.png);
   background-repeat: no-repeat; 
-  background-size: 100%;
+  background-size: cover;
+  padding-top: 2rem;
+  position: relative;
+  top: -5px;
+  z-index: 2;
 }
 
 .vis-design{
@@ -1069,6 +1086,7 @@ ol{
   padding: 2rem;
   position: relative;
   text-align: left;
+  z-index: 4;
 }
 
 @media screen and (min-width: 510px) {
@@ -1133,7 +1151,7 @@ h1{
   .right-content {
   }
   .arrow{
-    padding-top: 17rem;
+    padding-bottom: 8rem;
   }
   .mobile-landing{
     display: none;
@@ -1333,7 +1351,7 @@ li.survey{
 
 .dark-blue-back{
   background-color: #4F639A;
-  margin-bottom: -5rem;
+  padding-bottom: 9rem;
 }
 .persona-cards{
   display: grid;
@@ -1361,7 +1379,6 @@ h4{
 /* comp analysis */
 
 .comp-analysis{
-  margin-top: 5rem;
   margin-bottom:3rem;
 }
 
@@ -1407,6 +1424,9 @@ h4{
   padding-top: 13rem;
 } 
 
+#user-testing-1{
+  padding-top: 0;
+}
 /* branding */
 
 .branding{
