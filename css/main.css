@@ -77,7 +77,7 @@ html{
 }
 
 .hero{
-  padding-top: 5rem;
+  padding-top: 0;
 }
 
 /* nav bar - across all pages */
@@ -377,7 +377,8 @@ a.button:hover{
   color: #284078;
   font-family: 'Gravity-book';
   font-size: 2.13rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 0rem;
   text-align: center;
   }
 
@@ -574,7 +575,7 @@ a.button:hover{
   .percent-caption{
     color: #fff;
     font-family: 'Gravity-bookitalic';
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     line-height: 120%;
     text-align: center;
   }
@@ -692,7 +693,10 @@ a.button:hover{
   margin: 0 2rem;
   text-align: left;
 }
-
+#comp-button{
+  grid-column-start: 2;
+  margin-top: 4rem;
+}
 #comp-analysis{
   padding-top: 3rem;
 }
@@ -720,8 +724,6 @@ a.button:hover{
 /* info arch overlap */
 .info-arch-overlap{
   background-image: url(../images/info-arch-back.png);
-  position: relative;
-  width: 100%;
 }
 
 #info-arch{
@@ -730,7 +732,7 @@ a.button:hover{
 } 
 
 .wireframes{
-  padding: 3.75rem 0 3rem 0;
+  padding: 1rem 0;
   
 }
 .wireframes-main{
@@ -773,6 +775,9 @@ a.button:hover{
   text-align: center;
 }
 
+.mockups{
+  padding: 2rem 0;
+}
 
 .wireframes-mockups-button{
   padding: 15px 30px;
@@ -936,7 +941,7 @@ a.button:hover{
 
 #cubby-logo{
   display: block;
-  width: 380px;
+  width: 90%;
   height: auto;
   margin: 0 auto;
   padding-top: 3rem;
@@ -1040,6 +1045,10 @@ ol{
   padding: 1rem 0 1.3rem 0;
 }
 
+.mobile-card{
+  margin-top: 9rem;
+}
+
 .desktop-testing{
   display: block;
   width: 100%;
@@ -1065,6 +1074,7 @@ ol{
 
 #to-improve{
   padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 .testing-back{
@@ -1150,7 +1160,12 @@ h1{
     display: inline;
     font-family: 'Gravity-book';
     font-size: 1.6rem;
+    padding-top: 2rem;
     text-align: right;
+  }
+
+  .hero{
+    padding-top: 5rem;
   }
 
   body#cubby nav {
@@ -1296,6 +1311,7 @@ h1{
 
 #cubby-tag-line{
   font-size: 3.5rem;
+  padding-bottom: 6rem;
 }
 
 .cubby-description-2{
@@ -1485,13 +1501,11 @@ h4{
   background: none;
   box-shadow: none;
   margin-left: 11rem;
-  margin-top: 15rem;
   padding: 0 0 5rem 0;
   width: 40rem;
 }
 
 .i-wanted{
-  margin-top: 5rem;
   padding-bottom: 15rem;
   width: 60rem;
 }
@@ -1621,7 +1635,7 @@ h4{
 }
 
 ol{
-  margin: 14rem auto 7rem auto;
+  margin: 14rem auto 4rem auto;
   width: 60rem;
 }
 
@@ -1648,7 +1662,7 @@ ol{
 }
 
 .ut-mobile{
-  margin: 7rem 30rem;
+  margin: 5rem 14rem;
 }
 
 #to-improve{
@@ -1671,19 +1685,8 @@ ol{
 
 
 /* landing page MQ */
-/* @media screen and (min-width: 440px){ */
-  /* .mobile-landing{
-    width: initial;
-  } */
-/* } */
-/* 
-@media screen and (min-width: 510px){
-.pink-back{
-  height: 66rem;
-}*/
-} 
 
- @media screen and (min-width: 856px){
+ @media screen and (min-width: 1015px){
   br-1{
     display: block;
   }
@@ -1695,6 +1698,7 @@ ol{
     margin: 0 auto; 
     width: 85%;   
   } 
+  
 } 
 
 @media screen and (min-width: 950px){
@@ -1803,6 +1807,9 @@ ol{
   width: 60rem;
 }
 
+.ut-mobile{
+  margin: 5rem 30rem;
+}
 }
 
 /* about page MQ */
