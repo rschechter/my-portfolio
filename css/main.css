@@ -72,10 +72,6 @@ html{
   z-index: 1;
 }
 
-/* .home{
-  color: white;
-} */
-
 /* nav bar - across all pages */
 .container{
   margin: 0 auto;
@@ -140,14 +136,10 @@ body#index .menu-bar li a {
   color: #fff;
 }
 
-/* body#about .logo a,
-body#about .menu-bar li a {
-  color:
-} */
-
 #cubby-footer{
   background-color: white;
 }
+
 /* footer - across all pages */
 
 footer{
@@ -167,9 +159,7 @@ footer{
 ul.social-bar{
   display: flex;
   justify-content: center;
-  /* margin: 0 auto; */
   padding: 3rem 0;
-  /* width: 100%; */
 }
 
 a { /* social icons */
@@ -182,12 +172,8 @@ a { /* social icons */
   font-size: 1.2rem;
   padding: 2rem 0;
   text-align: center;
-  /* width: 100%; */
 }
 
-/* .home-2{
-  color: #BA808C
-} */
 /* home page body */
 
 h1{ /* Hi, I'm Rachel! */
@@ -252,7 +238,6 @@ svg.curve {
 
 .left-content{ /* section including "Cubby", description and button */
   text-align: center;
-  /* width: 100%; */
 }
 
 .project-name{
@@ -497,7 +482,7 @@ a.button:hover{
     padding-bottom: 1rem;
     text-align: left;
   }
-  /* discovery section overlap */
+  /* Discovery Phase */
   .disc-image-overlap{
     background-image: url(../images/discovery-phase-mobile.png);
     background-repeat: no-repeat;
@@ -593,14 +578,6 @@ a.button:hover{
     grid-row-start: 2;
   } 
   
-  
-  /* survey section overlap */
-  
-  .survey-image-overlap{
-    position: relative;
-    width: 100%;
-  }
-  
   #survey-caption{
     color: white;
     font-family: 'Gravity-book';
@@ -619,6 +596,8 @@ a.button:hover{
     grid-column-end: 3
   }
   
+  /* User personas */
+
   #user-personas{
     padding-top: 5rem;
   }
@@ -630,7 +609,6 @@ a.button:hover{
   .user-personas-intro{
     background-color: #FAF6FF;
   }
-  
   
   .persona-titles{
     background-color: #A5EDDD;
@@ -654,13 +632,6 @@ a.button:hover{
     text-align: left;
   }
 
-
-/* persona picture overlap */
-
-.persona-image-overlap{
-  position: relative;
-  width: 100%;
-}
 .marcus-samantha{
   display: block;
   height: 150px;
@@ -689,6 +660,9 @@ a.button:hover{
   margin: 0 2rem;
   text-align: left;
 }
+
+/* competitive analysis */
+
 #comp-button{
   grid-column-start: 2;
   margin-top: 4rem;
@@ -717,7 +691,8 @@ a.button:hover{
   text-align: center;
 }
 
-/* info arch overlap */
+/* information architecture */
+
 .info-arch-overlap{
   background-image: url(../images/info-arch-back.png);
 }
@@ -726,6 +701,8 @@ a.button:hover{
   margin: 0 2rem;
   padding-top: 4rem;
 } 
+
+/* wireframes */
 
 .wireframes{
   padding: 1rem 0;
@@ -770,6 +747,8 @@ a.button:hover{
   padding: .5rem 0 3rem 0;
   text-align: center;
 }
+
+/* mockups & user testing 1 */
 
 .mockups{
   padding: 2rem 0;
@@ -827,6 +806,7 @@ a.button:hover{
 }
 
 /* Branding & Identity */
+
 .branding-overlap{
   background-image: url(../images/ut1-curve2.svg);
   background-position: center -13vw;
@@ -857,8 +837,6 @@ a.button:hover{
   background-size: cover;
   padding-bottom: 4rem;
 }
-
-/* overlap */
 
 .branding-text{
   background-color: #fff;
@@ -955,6 +933,8 @@ a.button:hover{
   z-index: 2;
 }
 
+/* Visual design */
+
 .vis-design{
   background-color: #F7EFFF;
   background-image: url(../images/visual-curve.svg);
@@ -970,6 +950,8 @@ a.button:hover{
 .v-design{
   padding-top: 0;
 }
+
+/* mockups */
 
 .img-mockups{
   display: block;
@@ -1000,13 +982,13 @@ a.button:hover{
   background-size: 100%;
 }
 
+/* preference tests */
+
 .pref{
   display: block;
   padding: 3rem 0;
   width: 100%;
 }
-
-/* .pref-buttons */
 
 #pref-label{
   padding-top: 3rem;
@@ -1016,6 +998,8 @@ a.button:hover{
   background-color: #F7EFFF;
   padding: 3rem 0;
 }
+
+/* user testing 2 */
 
 .user-testing-2{
   padding-top: 5rem;
@@ -1122,6 +1106,7 @@ ol{
   text-align: left;
   z-index: 4;
 }
+
 .concl-text{
   padding-bottom: 0;
 }
@@ -1179,6 +1164,7 @@ h1{
   .main{
     padding-top: 13rem;
   }
+
 /* landing page MQ */
    .wrapper{
     align-items: center;
@@ -1206,11 +1192,10 @@ h1{
     float: right;
   }
 
-  .right-content {
-  }
   .arrow{
     padding-bottom: 8rem;
   }
+
   .mobile-landing{
     display: none;
   }
@@ -1449,17 +1434,11 @@ h4{
   margin: 2rem 4rem;
 }
 
-/* br{
- display: none;
-}  */
-
 .persona-break{
   display: block;
 }
 
 /* info arch */
-
-
 
 .info-arch{
   display: grid;
@@ -1485,6 +1464,7 @@ h4{
 #user-testing-1{
   padding-top: 0;
 }
+
 /* branding */
 
 .branding{
@@ -1681,17 +1661,8 @@ ol{
 }
 
 
+/* cubby MQ */
 
-
-
-
-/* landing page MQ */
-
- @media screen and (min-width: 1015px){
-  br-1{
-    display: block;
-  }
-}
  @media screen and (min-width: 890px){
 
   #typeface-desktop{
@@ -1699,7 +1670,6 @@ ol{
     margin: 0 auto; 
     width: 85%;   
   } 
-  
 } 
 
 @media screen and (min-width: 950px){
@@ -1746,6 +1716,11 @@ ol{
 }
 }
 
+@media screen and (min-width: 1015px){
+  br-1{
+    display: block;
+  }
+}
 
 @media screen and (min-width: 1100px){
 #quote{
@@ -1813,12 +1788,9 @@ ol{
 }
 }
 
-/* about page MQ */
 @media screen and (min-width: 1150px){
 .about{
     margin: 0 auto;
     width: 70%;
   }
 }
-
-
