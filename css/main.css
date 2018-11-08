@@ -346,6 +346,10 @@ a.button:hover{
 
 /* hero */
 
+.main{
+  overflow-x: hidden;
+}
+
 #cubby-title{
   color: #284078;
   font-family: 'Gravity-book';
