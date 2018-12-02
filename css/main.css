@@ -209,6 +209,13 @@ h3{ /* currently based in NYC */
   text-align: left;
 }
 
+h6{
+  color: #262626;
+  font-family: 'Gravity-regular';
+  font-size: 2.6rem;
+  text-align: center;
+}
+
 /* general middle section */
 .case-studies{
   background-color: #fff; 
@@ -236,20 +243,21 @@ svg.curve {
 
 /* left content */
 
-.left-content{ /* section including "Cubby", description and button */
+.cubby-text{ /* section including "Cubby", description and button */
   text-align: center;
 }
 
 .project-name{
-  color: #284078;
+  color: #14B9B2;
   font-family: 'Gravity-book';
   font-size: 5.3rem;
   text-align: center;
   padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 
-.cubby-description{
-  color: #284078;
+.project-description{
+  color: #262626;
   font-size: 1.9rem;
   font-family: 'Gravity-book';
   line-height: 135%;
@@ -259,28 +267,59 @@ svg.curve {
 }
 
 a.button{
-  background-color: #284078;
+  background-color: #14B9B2;
   border-radius: 8px;
-  border: 1px solid #284078;
+  border: 3px solid #14B9B2;
   color: #fff; 
   display: inline-block;
   font-family: 'Gravity-regular';
   font-size: 1.8rem;
-  padding: 15px 35px;
+  padding: 15px 19px;
   text-decoration: none;
-  width: 162px;
+  width: 230px;
   transition-duration: 0.4s;
+}
+.fr-text a.button{
+  background-color: #7d00fd;
+  border: 3px solid #7d00fd;
+  margin: 1rem -1rem 1rem 0;
+  text-align: center;
+}
+.fr-text a.button:hover{
+  background-color: #fff; 
+  color: #7d00fd;
+}
+
+#fr-section{
+  padding-bottom: 13rem;
+}
+
+.fr-text{
+  text-align: center;
+} 
+
+.fr-text h4{
+  color: #7d00fd;
+}
+
+#fr-section{
+  padding-bottom: 8rem;
 }
 
 a.button:hover{
   background-color: #fff; 
-  color: #284078;
+  color: #14B9B2;
 }
 /* right content */
 
 .right-content{ /* section Cubby image */
   text-align: center;
   width: 100%; 
+}
+.fr-content img{
+  /* padding: 0 0 0 4rem; */
+  width: 100%;
+  padding-top: 4rem;
 }
 .mobile-landing{
   display: block;
@@ -1176,28 +1215,50 @@ h1{
 /* landing page MQ */
    .wrapper{
     align-items: center;
-    display: grid;
-    grid-gap: 90px;
-    grid-template-columns: 1fr 2fr; 
+    display: flex; 
+   }
+
+   .cubby-text{
+     padding-left: 7rem;
+     order: 2;
    }
 
   .project-name{
-    text-align: right;
+    text-align: left;
     margin: 0;
     padding: 0;
   }
-
-  .cubby-description{
-    padding-bottom: 5.5rem;
-    text-align: right;
+  h6{
+    text-align: left;
+    padding: 2rem 0 1rem 0;
+    font-size: 3rem;
   }
 
+  .project-description{
+    padding-bottom: 3.5rem;
+    text-align: left;
+    font-family: 'Gravity-book';
+    font-size: 1.9rem;
+    line-height: 135%;
+  }
+  #fr-section{
+    padding-bottom: 13rem;
+  }
+  .fr-text a.button{
+    margin: 1rem 3rem 1rem 0;
+  }
+
+.fr-text{
+  padding-right: 7rem;
+  text-align: center;
+  width: 44%;
+} 
   br{
     display: none;
   }
  
   a.button{
-    float: right;
+    float: left;
   }
 
   .arrow{
