@@ -5,7 +5,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-book', sans-serif;
+  font-family: 'Gravity-book';
   src: url(../fonts/webfonts-gravity/gravity-book.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-book.woff) format('woff');
   font-weight: normal;
@@ -13,7 +13,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-bookitalic', sans-serif;
+  font-family: 'Gravity-bookitalic';
   src: url(../fonts/webfonts-gravity/gravity-bookitalic.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-bookitalic.woff) format('woff');
   font-weight: normal;
@@ -21,7 +21,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-italic', sans-serif;
+  font-family: 'Gravity-italic';
   src: url(../fonts/webfonts-gravity/gravity-italic.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-italic.woff) format('woff');
   font-weight: normal;
@@ -29,7 +29,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-light', sans-serif;
+  font-family: 'Gravity-light';
   src: url(../fonts/webfonts-gravity/gravity-light.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-light.woff) format('woff');
   font-weight: normal;
@@ -37,7 +37,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-lightitalic', sans-serif;
+  font-family: 'Gravity-lightitalic';
   src: url(../fonts/webfonts-gravity/gravity-lightitalic.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-lightitalic.woff) format('woff');
   font-weight: normal;
@@ -45,7 +45,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-regular', sans-serif;
+  font-family: 'Gravity-regular';
   src: url(../fonts/webfonts-gravity/gravity-regular.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-regular.woff) format('woff');
   font-weight: normal;
@@ -53,7 +53,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-bold', sans-serif;
+  font-family: 'Gravity-bold';
   src: url(../fonts/webfonts-gravity/gravity-bold.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-bold.woff) format('woff');
   font-weight: normal;
