@@ -178,7 +178,7 @@ a { /* social icons */
 
 h1{ /* Hi, I'm Rachel! */
   color: #fff;
-  font-family: 'Gravity-bold';
+  font-family: 'Gravity-bold', sans-serif;
   font-size: 4.5rem;
   padding-top: 3.5rem;
   text-align: left;
@@ -186,7 +186,7 @@ h1{ /* Hi, I'm Rachel! */
 
 h2{ /* slogan */
   color: #fff;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 2.7rem;
   line-height: 3.2rem;
   padding: 2rem 0;
