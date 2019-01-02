@@ -5,7 +5,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   src: url(../fonts/webfonts-gravity/gravity-book.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-book.woff) format('woff');
   font-weight: normal;
@@ -13,7 +13,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-bookitalic';
+  font-family: 'Gravity-bookitalic', sans-serif;
   src: url(../fonts/webfonts-gravity/gravity-bookitalic.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-bookitalic.woff) format('woff');
   font-weight: normal;
@@ -21,7 +21,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-italic';
+  font-family: 'Gravity-italic', sans-serif;
   src: url(../fonts/webfonts-gravity/gravity-italic.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-italic.woff) format('woff');
   font-weight: normal;
@@ -29,7 +29,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-light';
+  font-family: 'Gravity-light', sans-serif;
   src: url(../fonts/webfonts-gravity/gravity-light.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-light.woff) format('woff');
   font-weight: normal;
@@ -37,7 +37,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-lightitalic';
+  font-family: 'Gravity-lightitalic', sans-serif;
   src: url(../fonts/webfonts-gravity/gravity-lightitalic.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-lightitalic.woff) format('woff');
   font-weight: normal;
@@ -45,7 +45,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-regular';
+  font-family: 'Gravity-regular', sans-serif;
   src: url(../fonts/webfonts-gravity/gravity-regular.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-regular.woff) format('woff');
   font-weight: normal;
@@ -53,7 +53,7 @@ html{
 }
 
 @font-face {
-  font-family: 'Gravity-bold';
+  font-family: 'Gravity-bold', sans-serif;
   src: url(../fonts/webfonts-gravity/gravity-bold.woff2) format('woff2'),
        url(../fonts/webfonts-gravity/gravity-bold.woff) format('woff');
   font-weight: normal;
@@ -94,7 +94,7 @@ nav{
 
 .logo a{
   color: #BA808C;
-  font-family: 'Gravity-regular';
+  font-family: 'Gravity-regular', sans-serif;
   font-size: 1.6rem;
   text-decoration: none;
   display: flex;
@@ -115,7 +115,7 @@ nav{
 
 .menu-bar li a {
   color: #BA808C;
-  font-family: 'Gravity-regular';
+  font-family: 'Gravity-regular', sans-serif;
   font-size: 1.6rem;
   padding-top: 1.4rem;
   text-decoration: none;
@@ -148,7 +148,7 @@ footer{
 
 .contact-footer{
   color: #BA808C;
-  font-family: 'Gravity-regular';
+  font-family: 'Gravity-regular', sans-serif;
   font-size: 2.8rem;
   padding-bottom: .25rem;
   padding-top: 5rem;
@@ -168,7 +168,7 @@ a { /* social icons */
 
 .copywrite-info{
   color: #BA808C;
-  font-family: 'Gravity-bold';
+  font-family: 'Gravity-bold', sans-serif;
   font-size: 1.2rem;
   padding: 2rem 0;
   text-align: center;
@@ -201,7 +201,7 @@ br-1{
 }
 h3{ /* currently based in NYC */
   color: #fff;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 2.1rem;
   line-height: 120%;
   padding-bottom: 5rem;
@@ -211,13 +211,13 @@ h3{ /* currently based in NYC */
 
 h6{
   color: #262626;
-  font-family: 'Gravity-regular';
+  font-family: 'Gravity-regular', sans-serif;
   font-size: 2.6rem;
   text-align: center;
 }
 
 /* general middle section */
-.case-studies{
+#case-studies{
   background-color: #fff; 
   background-repeat: no-repeat; 
   background-size: 100%;
@@ -249,7 +249,7 @@ svg.curve {
 
 .project-name{
   color: #14B9B2;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 5.3rem;
   text-align: center;
   padding-top: 5rem;
@@ -259,7 +259,7 @@ svg.curve {
 .project-description{
   color: #262626;
   font-size: 1.9rem;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   line-height: 135%;
   padding-bottom: 4rem;
   padding-top: 2rem;
@@ -272,7 +272,7 @@ a.button{
   border: 3px solid #14B9B2;
   color: #fff; 
   display: inline-block;
-  font-family: 'Gravity-regular';
+  font-family: 'Gravity-regular', sans-serif;
   font-size: 1.8rem;
   padding: 15px 19px;
   text-decoration: none;
@@ -344,7 +344,7 @@ a.button:hover{
                                     }
 
                                     #quote{
-                                      font-family: 'Gravity-italic';
+                                      font-family: 'Gravity-italic', sans-serif;
                                       font-size: 2.4rem;
                                       line-height: 130%;
                                       padding-bottom: 1rem;
@@ -353,7 +353,7 @@ a.button:hover{
                                     }
 
                                     #speaker{
-                                        font-family: 'Gravity-regular';
+                                        font-family: 'Gravity-regular', sans-serif;
                                         font-size: 2rem;
                                         padding-bottom: 2rem;
                                         width: 100%;
@@ -362,14 +362,14 @@ a.button:hover{
                                     }
 
                                     .section-tagline{
-                                        font-family: 'Gravity-italic';
+                                        font-family: 'Gravity-italic', sans-serif;
                                         font-size: 2.1rem;
                                         line-height: 130%;
                                         padding-top: 2rem;
                                     }
 
                                     .about-body-copy{
-                                        font-family: 'Gravity-book';
+                                        font-family: 'Gravity-book', sans-serif;
                                         font-size: 1.8rem;
                                         line-height: 140%;
                                         text-align: left;
@@ -391,7 +391,7 @@ a.button:hover{
 
 #cubby-title{
   color: #284078;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 5rem;
   padding: 3rem 0 1.6rem 0;
   text-align: center;
@@ -399,7 +399,7 @@ a.button:hover{
   
   #cubby-tag-line{
   color: #284078;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 2.13rem;
   padding-bottom: 3rem;
   padding-top: 0;
@@ -413,7 +413,7 @@ a.button:hover{
   
   .cubby-description-2{
   color: #000;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 1.8rem;
   line-height: 125%;
   margin: 0 3rem;
@@ -427,7 +427,7 @@ a.button:hover{
     border-radius: 8px;
     color: #fff; 
     display: block;
-    font-family: 'Gravity-regular';
+    font-family: 'Gravity-regular', sans-serif;
     font-size: 1.8rem;
     line-height: 130%;
     margin: 2rem auto; 
@@ -443,7 +443,7 @@ a.button:hover{
 
   .rdt-titles{
   color: #000;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 2.8rem;
   padding: 3.5rem 0 1rem 0;
   text-align: center;
@@ -451,7 +451,7 @@ a.button:hover{
   
   .rdt{
     color: #000;
-    font-family: 'Gravity-book';
+    font-family: 'Gravity-book', sans-serif;
     font-size: 1.8rem;
     line-height: 140%;
     text-align: center;
@@ -462,7 +462,7 @@ a.button:hover{
   
   .ps{
     color: #000;
-    font-family: 'Gravity-book';
+    font-family: 'Gravity-book', sans-serif;
     font-size: 3.4rem;
     margin-left: 2rem;
     padding: 3rem 0 1rem 0;
@@ -471,7 +471,7 @@ a.button:hover{
   
   .ps-text-body{
     color: #000;
-    font-family: 'Gravity-book';
+    font-family: 'Gravity-book', sans-serif;
     font-size: 1.8rem;
     line-height: 150%;
     margin: 0 2rem;
@@ -485,7 +485,7 @@ a.button:hover{
 
   .section-label{
     color: #284078;
-    font-family: 'Gravity-book';
+    font-family: 'Gravity-book', sans-serif;
     font-size: 3.5rem;
     line-height: 120%;
     padding-bottom: 4rem;
@@ -494,7 +494,7 @@ a.button:hover{
             /* User Survey */
   h4{
     color: #14B9B2;
-    font-family: 'Gravity-book';
+    font-family: 'Gravity-book', sans-serif;
     font-size: 2.8rem;
     margin: 0 2rem;
     padding-bottom: 1.3rem;
@@ -502,14 +502,14 @@ a.button:hover{
   }
   h5{
     color: #284078;
-    font-family: 'Gravity-book';
+    font-family: 'Gravity-book', sans-serif;
     font-size: 3.5rem;
     text-align: center;
   }
   
   .case-study-text{
     color: #000;
-    font-family: 'Gravity-book';
+    font-family: 'Gravity-book', sans-serif;
     font-size: 1.8rem;
     line-height: 140%;
     margin: 0 2rem;
@@ -518,7 +518,7 @@ a.button:hover{
   }
   .card-text{
     color: #000;
-    font-family: 'Gravity-book';
+    font-family: 'Gravity-book', sans-serif;
     font-size: 1.8rem;
     line-height: 140%;
     margin: 0 2rem;
@@ -557,7 +557,7 @@ a.button:hover{
   
   li.survey{
     color: #31397E;
-    font-family: 'Gravity-italic';
+    font-family: 'Gravity-italic', sans-serif;
     font-size: 1.8rem;
     line-height: 160%;
     margin: 0 2rem;
@@ -582,6 +582,7 @@ a.button:hover{
     padding: 0 1rem;
   }
   
+  
   .percent-data{
     align-items: center;
     display: flex;
@@ -590,7 +591,7 @@ a.button:hover{
   
   .percent{
     color: #fff;
-    font-family: 'Gravity-bookitalic';
+    font-family: 'Gravity-bookitalic', sans-serif;
     font-size: 4rem;
     padding-bottom: 1rem;
     text-align: left; 
@@ -598,7 +599,7 @@ a.button:hover{
 
   .percent-caption{
     color: #fff;
-    font-family: 'Gravity-bookitalic';
+    font-family: 'Gravity-bookitalic', sans-serif;
     font-size: 1.8rem;
     line-height: 120%;
     text-align: center;
@@ -623,7 +624,7 @@ a.button:hover{
   
   #survey-caption{
     color: white;
-    font-family: 'Gravity-book';
+    font-family: 'Gravity-regular', sans-serif;
     font-size: 2rem;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -656,7 +657,7 @@ a.button:hover{
   .persona-titles{
     background-color: #A5EDDD;
     color: #000;
-    font-family: 'Gravity-bookitalic';
+    font-family: 'Gravity-bookitalic', sans-serif;
     font-size: 1.8rem;
     letter-spacing: .4px;
     line-height: 130%;
@@ -666,7 +667,7 @@ a.button:hover{
   
   .regular-bold-title{
     color: #000;
-    font-family: 'Gravity-bold';
+    font-family: 'Gravity-bold', sans-serif;
     font-size: 1.8rem;
     line-height: 130%;
     margin: 0 2rem;
@@ -697,7 +698,7 @@ a.button:hover{
 }
 #after-personas{
   color: white;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 1.8rem;
   line-height: 140%;
   margin: 0 2rem;
@@ -788,7 +789,7 @@ a.button:hover{
 
 .img-label{
   color: #000;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 1.6rem;
   margin: 0 2rem;
   padding: .5rem 0 3rem 0;
@@ -845,7 +846,7 @@ a.button:hover{
 
 .user-test-results{
   color: #000;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 1.8rem;
   line-height: 140%;
   padding: 2rem 1rem;
@@ -890,7 +891,7 @@ a.button:hover{
   border-radius: 8px;
   box-shadow: 0 0 10px .5px rgba(0,0,0,0.2);
   color: #284078;
-  font-family: 'Gravity-regular';
+  font-family: 'Gravity-regular', sans-serif;
   font-size: 1.8rem;
   line-height: 130%;
   margin: 2rem 2rem;
@@ -1057,7 +1058,7 @@ ol{
   border-radius: 8px;
   box-shadow: 0 0 7px 2px rgba(0,0,0,0.2);
   color: #000;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 1.8rem;
   line-height: 140%;
   margin: 2rem 2rem;
@@ -1066,7 +1067,7 @@ ol{
 
 #desktop-mobile-card{
   color: #000;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 2.5rem;
   text-align: center;
   padding: 1rem 0 1.3rem 0;
@@ -1088,7 +1089,7 @@ ol{
 
 .img-label-2{
   color: #000;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 1.6rem;
   padding: 2rem 0 1rem 0;
   margin: 0 2rem;
@@ -1125,7 +1126,7 @@ ol{
 
 #conclusion-label{
   color: #A5EDDD;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 3.5rem;
   padding: 3rem 0 1rem 0;
   text-align: center;
@@ -1133,7 +1134,7 @@ ol{
 
 .case-study-text-white{
   color: #fff; 
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 1.8rem;
   line-height: 130%;
   margin: 0 2rem;
@@ -1145,7 +1146,7 @@ ol{
 .under-cards{
   background-color: #6B7CAA;
   color: #fff;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   font-size: 1.8rem;
   line-height: 130%;
   padding: 2rem;
@@ -1158,6 +1159,454 @@ ol{
   padding-bottom: 0;
 }
 
+                              /* Family Room */
+
+body#familyroom .logo a,
+body#familyroom .menu-bar li a {
+color: #7D00FD;
+}
+
+
+#fr-hero{
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+
+.fr-case-study-text{
+    color: #000;
+    font-family: 'Gravity-book', sans-serif;
+    font-size: 1.8rem;
+    line-height: 140%;
+    margin: 0 2rem;
+    padding-bottom: 1rem;
+    text-align: left;
+}
+
+.purple-button-2{
+  background-color: #7D00FD;
+  border-radius: 8px;
+  color: #fff; 
+  display: block;
+  font-family: 'Gravity-bold', sans-serif;
+  font-size: 1.8rem;
+  line-height: 130%;
+  margin: 2rem auto; 
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  width: 240px; 
+}
+/* .purple-button-2:hover{
+  background-color: #fff; 
+  border: 2px solid #7D00FD;
+  color: #7d00fd;
+} */
+
+.purple-button{
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid #7D00FD;
+  color: #7D00FD; 
+  display: block;
+  font-family: 'Gravity-regular', sans-serif;
+  font-size: 1.8rem;
+  line-height: 130%;
+  margin: 2rem auto; 
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  width: 240px; 
+}
+
+.light-blue-back{
+  background-color: #F0E9FF;
+}
+
+#fr-title{
+  color: #7D00FD;
+  font-family: 'Gravity-book', sans-serif;
+  font-size: 5rem;
+  padding: 7rem 0 1.6rem 0;
+  text-align: center;
+}
+#fr-desc{
+  color: #000;
+  font-family: 'Gravity-book', sans-serif;
+  font-size: 2.13rem;
+  padding-bottom: 3rem;
+  padding-top: 0;
+  text-align: center;
+}
+
+.roles-deliverables-tools li{
+  padding: 0;
+}
+.roles{
+  margin-top: 3rem;
+}
+
+.tools{
+  margin-bottom: 4rem;
+}
+
+.problem-solution-fr{
+  margin-bottom: 6rem;
+}
+
+.purple-text{
+  color: #7D00FD;
+}
+
+.purple-text-bold{
+  font-family: 'Gravity-bold', sans-serif;
+  color: #7D00FD;
+  padding-top: 3rem;
+}
+
+.black-text{
+  color: #000;
+}
+
+.survey-results-2{
+  background-color: #7D00FD;
+  display: grid;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 3.5rem;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 1rem 3rem 0;
+}
+
+.comp-logos{
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+#groupme{
+  padding: 0 1.4rem;
+}
+
+.comp-analysis-takeaways{
+  background-color: #7D00FD;
+  padding-top: 3rem;
+}
+
+.white-text{
+  color: #fff;
+  font-family: 'Gravity-bold', sans-serif;
+  text-align: center;
+  background-color: none;
+  font-size: 1.8rem;
+}
+
+.comp-takeaways-text{
+  color: #fff;
+  font-family: 'Gravity-regular', sans-serif;
+  font-size: 1.8rem;
+  line-height: 140%;
+  margin: 1rem 2rem;
+ padding-bottom: 2rem;
+}
+
+ul li{
+  padding: 1rem 0;
+}
+
+.white-back{
+  background-color: white;
+  border-radius: 0 0 25px 25px;
+  padding-bottom: 1rem;
+}
+.purple-back{
+  background-color: #E1D3FF;
+  padding: 1rem 0;
+}
+
+.personas-back{
+  background-color: #fff;
+}
+.persona-cards-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 2rem;
+  /* margin-bottom: -17rem;
+  position: relative;
+  top: -17rem; */
+}
+.bold-title{
+  color: #000;
+    font-family: 'Gravity-bold', sans-serif;
+    font-size: 1.8rem;
+    line-height: 130%;
+    margin: 0 2rem;
+    padding-bottom: .6rem;
+    padding-top: 2rem;
+    text-align: left;
+}
+
+.persona-card-2 img{
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.purple-back li{
+  color: #000;
+  font-family: 'Gravity-regular', sans-serif;
+  font-size: 1.8rem;
+  padding: .5rem 0;
+  margin: 0 2rem;
+  text-align: center;
+}
+
+.info-arch img{
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+
+#uf-sketch{
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-caption{
+  font-family: 'Gravity-regular', sans-serif;
+  font-size: 1.4rem;
+  color: #5A5A5A;
+  text-align: center;
+  padding: 2rem;
+}
+
+.sketches-wireframes{
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+
+.sketches-wireframes img{
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.testing-1{
+  padding-top: 3rem;
+  margin-top: 1rem;
+}
+
+.list-text{
+  color: #000;
+  font-family: 'Gravity-book', sans-serif;
+  font-size: 1.8rem;
+  line-height: 130%;
+  margin: 0rem 2rem;
+  padding-bottom: 2rem;
+}
+
+.iteration-1 p{
+  font-family: 'Gravity-regular', sans-serif;
+  padding-top: 2rem;
+}
+.iteration-grid img{
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+.iteration-grid p{
+  color: #7D00FD;
+  font-family: 'Gravity-bold', sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 3rem 0 1rem 0;
+}
+.img-bottom-spacing{
+  padding-bottom: 3rem;
+}
+
+#visual{
+  padding-top: 3rem;
+}
+
+.design-grid img{
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* .grid-2{
+  padding-top: 4rem;
+} */
+
+.typeface,
+.colors{
+  padding-top: 4rem;
+}
+
+#iterations{
+  width: 75%;
+  padding: 6rem 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.three-logos img{
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 6rem;
+}
+
+.three-logos{
+  padding-bottom: 4rem;
+}
+
+.nunito{
+  font-family: 'Nunito', sans-serif;
+  background-color: #F0E9FF;
+  border-radius: 25px;
+  font-size: 2.6rem;
+  padding: 2rem 2rem;
+  margin: 1rem 2rem 3rem 2rem;
+}
+
+.colors span-purple{
+  color: #7D00FD;
+  font-family: 'Gravity-bold', sans-serif;
+}
+span-red{
+  color: #FF0059;
+  font-family: 'Gravity-bold', sans-serif;
+}
+.colors span-yellow{
+  color: #FFBB00;
+  font-family: 'Gravity-bold', sans-serif;
+}
+.colors span-pink{
+  color: #FF8FA1;
+  font-family: 'Gravity-bold', sans-serif;
+}
+.colors span-green{
+  color: #00F0C6;
+  font-family: 'Gravity-bold', sans-serif;
+}
+
+.colors img{
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.hi-fi{
+  padding: 3rem 0;
+}
+
+.hi-fi div img{
+  display: block;
+  margin: 0 auto;
+  width: 97%;
+  padding: 2rem 0;
+}
+
+.trans-button{
+  background-color: #F0E9FF;
+}
+
+.testing-2{
+  padding-top: 3rem;
+}
+
+#some-q{
+  padding-top: 2.5rem;
+}
+
+.purple-text-title{
+  color: #7D00FD;
+  font-family: 'Gravity-regular', sans-serif;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  margin-left: 2rem;
+  padding: 1rem 0;
+}
+
+#chat-before,
+#post-before{
+  width: 63%;
+}
+
+#chat-after,
+#post-after{
+  padding-bottom: 3rem;
+}
+.testing-2 img{
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  /* padding: 3rem; */
+}
+
+.testing-2 .purple-text{
+  padding-top: 3rem;
+}
+
+.final-call{
+  width: 100%;
+}
+
+.b-a{
+    color: #7D00FD;
+    font-family: 'Gravity-bold', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 3rem 0 1rem 0;
+}
+
+.testing-title{
+  color: #000;
+  text-align: center;
+  font-size: 2.3rem;
+  padding-top: 2rem;
+  font-family: 'Gravity-regular', sans-serif;
+}
+
+.landing{
+  padding: 3rem 0;
+}
+
+.landing img{
+  display: block;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.lessons{
+  padding: 4rem 0 2rem 0;
+}
+
+.concl .purple-text{
+  padding-top: 2rem;
+}
+
+#final-para{
+  padding: 3rem 0;
+  font-family: 'Gravity-regular', sans-serif
+}
+
+.button-3{
+  font-family: 'Gravity-bold', sans-serif;
+  font-size: 2rem;
+  color: #7D00FD;
+  text-decoration: none;
+ 
+}
+
+.other-projects{
+  padding-bottom: 1.2rem;
+  text-align: center;
+}
+}
 @media screen and (min-width: 510px) {
 .pink-back{
   height: 66rem;
@@ -1190,7 +1639,7 @@ h1{
   .menu-bar{
     color: #D02E77;
     display: inline;
-    font-family: 'Gravity-book';
+    font-family: 'Gravity-book', sans-serif;
     font-size: 1.6rem;
     padding-top: 2rem;
     text-align: right;
@@ -1208,7 +1657,7 @@ h1{
     z-index: 10;
   }
 
-  .main{
+  .cubby-main{
     padding-top: 13rem;
   }
 
@@ -1237,7 +1686,7 @@ h1{
   .project-description{
     padding-bottom: 3.5rem;
     text-align: left;
-    font-family: 'Gravity-book';
+    font-family: 'Gravity-book', sans-serif;
     font-size: 1.9rem;
     line-height: 135%;
   }
@@ -1273,6 +1722,260 @@ h1{
     display: block;
     width: 100%;
   }
+
+
+
+
+
+/* Family Room MQ */
+
+body#familyroom .fr-case-study-text,
+body#familyroom .purple-text,
+body#familyroom .regular-bold-title,
+body#familyroom .list-text li,
+body#familyroom .purple-text-title,
+body#familyroom .head-buttons{
+  max-width: 735px;
+  margin: 0 auto;
+}
+
+.head-buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 35rem 3rem 35rem;
+}
+
+#fr-title{
+  font-size: 6.5rem;
+  padding-bottom: 2.2rem;
+}
+
+#fr-desc{
+  font-size: 3.5rem;
+}
+
+.roles{
+  margin-top: 0;
+}
+
+#rdt-fr{
+  margin-bottom: 6rem;
+  padding-bottom: 3rem;
+}
+
+.fr-case-study-text{
+  margin-left: 34rem;
+  width: 75rem;
+}
+.purple-text,
+.purple-text-title{
+  margin-left: 34rem;
+}
+.problem-solution-fr{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.survey-results-2,
+.comp-analysis-takeaways{
+  margin: 3rem 20rem;
+  border-radius: 25px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.comp-logos{
+  padding: 0 0 3rem 0;
+}
+#groupme{
+  padding: 0 10rem;
+}
+
+.comp-takeaways-text{
+  margin: 2rem 4rem;
+  padding-bottom: 3rem;
+}
+
+.personas-fr{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 3rem;
+  margin: 0 3rem;
+}
+
+.personas-back{
+  background-color: #F0E9FF;
+  padding-bottom: 4rem;
+}
+
+#uf-sketch{
+  display: block;
+  margin: 0 auto;
+  padding-top: 2rem;
+  width: auto;
+}
+
+
+.sketches-wireframes img{
+  width: auto;
+  padding-top: 4rem;
+}
+
+.regular-bold-title{
+  /* margin-left: 34rem;
+  width: 75rem; */
+  max-width: 935px;
+  margin: 0 auto;
+}
+/* .list-text{
+  margin-left: 34rem;
+} */
+
+.iteration-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 20rem 4rem 20rem;
+}
+
+#prog-before{
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+#prog-after{
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+#send-before{
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+#send-after{
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.iteration-1{
+  padding-bottom: 2rem;
+}
+
+#visual{
+  padding-top: 6rem;
+}
+
+.design-grid{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 4rem 20rem;
+  grid-column-gap: 9rem;
+  align-items: baseline;
+}
+
+#iterations{
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#i-looked{
+  text-align: center;
+}  
+
+#app-logo{
+  grid-column-start: 2;
+  grid-row-start: 1;
+  width: 65%;
+}
+
+#long-logo{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 50%;
+  padding-top: 8rem;
+}
+
+#long-caption{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.nunito{
+  margin: 1rem 30rem 7rem 30rem;
+  padding: 3rem 4rem;
+  line-height: 134%;
+}
+
+.colors img{
+  width: 40%;
+  padding: 5rem 0;
+}
+
+.hi-fi{
+  padding-top: 11rem;
+}
+.hi-fi div img{
+  width: auto;
+  padding: 4rem 0;
+}
+
+.testing-2 img{
+  width: auto;
+}
+
+#deselect{
+  padding-top: 3rem;
+}
+
+.final-call{
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+#chat-before{
+  grid-row-start: 2;
+  grid-column-start: 1;
+  width: auto;
+}
+#chat-after{
+  grid-row-start: 2;
+  grid-column-start: 2;
+  padding-bottom: 0;
+}
+#post-before{
+  grid-row-start: 2;
+  grid-column-start: 1;
+  width: auto;
+}
+#post-after{
+  grid-row-start: 2;
+  grid-column-start: 2;
+  padding-bottom: 0;
+}
+
+/* .list-text li{
+  margin-right: 34rem;
+} */
+
+.testing-2 img{
+  padding: 0;
+}
+
+#after-left{
+  position: relative;
+  left: -35px;
+}
+
+.landing{
+  padding-top: 5rem;
+}
+
+/* #final-para{
+  font-family: 'Gravity-bold', sans-serif;
+} */
+
+.concl{
+  margin-bottom: 6rem;
+}
 
                 /* about page MQ */
                   .about-image{
@@ -1352,7 +2055,7 @@ h1{
                   }
 
                   #speaker{
-                    font-size: 2.2rem;
+                    hover    font-size: 2.2rem;
                     padding-bottom: 8rem;
                   }
 
@@ -1770,7 +2473,7 @@ ol{
 
 .pref-text{
   color: white;
-  font-family: 'Gravity-book';
+  font-family: 'Gravity-book', sans-serif;
   margin-left: 0;
   width: auto; 
 }
