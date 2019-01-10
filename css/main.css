@@ -1370,6 +1370,7 @@ ul li{
   width: 95%;
   display: block;
   margin: 0 auto;
+  padding-top: 2rem;
 }
 
 .img-caption{
@@ -1430,10 +1431,14 @@ ul li{
   padding-top: 3rem;
 }
 
+.design-grid{
+  padding-bottom: 5rem;
+}
 .design-grid img{
   display: block;
   margin: 0 auto;
   width: 95%;
+  padding: 2rem 0;
 }
 
 /* .grid-2{
@@ -1452,7 +1457,7 @@ ul li{
   margin: 0 auto;
 }
 
-.three-logos img{
+/* .three-logos img{
   display: block;
   margin: 0 auto;
   width: 90%;
@@ -1461,6 +1466,12 @@ ul li{
 
 .three-logos{
   padding-bottom: 4rem;
+} */
+
+#final-logo,
+#app-logo,
+#long-logo{
+  padding-top: 8rem;
 }
 
 .nunito{
@@ -1545,7 +1556,7 @@ span-red{
   display: block;
   margin: 0 auto;
   width: 75%;
-  /* padding: 3rem; */
+  padding: 3rem;
 }
 
 .testing-2 .purple-text{
@@ -1554,6 +1565,7 @@ span-red{
 
 .final-call{
   width: 100%;
+  padding-top: 3rem;
 }
 
 .b-a{
@@ -1573,7 +1585,8 @@ span-red{
 }
 
 .landing{
-  padding: 3rem 0;
+  padding: 4rem 0;
+  margin-top: 5rem;
 }
 
 .landing img{
@@ -1829,15 +1842,11 @@ body#familyroom .head-buttons{
 #uf-sketch{
   display: block;
   margin: 0 auto;
-  padding-top: 2rem;
   width: auto;
 }
 
 
-.sketches-wireframes img{
-  width: auto;
-  padding-top: 4rem;
-}
+
 
 .regular-bold-title{
   /* margin-left: 34rem;
@@ -1852,7 +1861,7 @@ body#familyroom .head-buttons{
 .iteration-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 1rem 20rem 4rem 20rem;
+  margin: 0 auto;
 }
 
 #prog-before{
@@ -1885,7 +1894,7 @@ body#familyroom .head-buttons{
   grid-template-columns: 1fr 1fr;
   margin: 4rem 20rem;
   grid-column-gap: 9rem;
-  align-items: baseline;
+  /* align-items: baseline; */
 }
 
 #iterations{
@@ -1917,7 +1926,6 @@ body#familyroom .head-buttons{
 }
 
 .nunito{
-  margin: 1rem 30rem 7rem 30rem;
   padding: 3rem 4rem;
   line-height: 134%;
 }
@@ -1930,10 +1938,7 @@ body#familyroom .head-buttons{
 .hi-fi{
   padding-top: 11rem;
 }
-.hi-fi div img{
-  width: auto;
-  padding: 4rem 0;
-}
+
 
 .testing-2 img{
   width: auto;
@@ -1986,6 +1991,7 @@ body#familyroom .head-buttons{
 
 .landing{
   padding-top: 5rem;
+  margin-top: 3rem;
 }
 
 /* #final-para{
@@ -2461,6 +2467,10 @@ ol{
     margin: 0 auto; 
     width: 85%;   
   } 
+  .hi-fi div img {
+    width: auto;
+    padding: 4rem 0;
+  }
 } 
 
 @media screen and (min-width: 950px){
@@ -2510,6 +2520,10 @@ ol{
 @media screen and (min-width: 1015px){
   br-1{
     display: block;
+  }
+  .sketches-wireframes img{
+    width: auto;
+    padding-top: 4rem;
   }
 }
 
@@ -2577,11 +2591,23 @@ ol{
 .ut-mobile{
   margin: 5rem 30rem;
 }
+
+.nunito {
+    margin: 1rem 30rem 7rem 30rem;
+    padding: 3rem 4rem;
+    line-height: 134%;
+}
 }
 
 @media screen and (min-width: 1150px){
 .about{
     margin: 0 auto;
     width: 70%;
+  }
+}
+
+@media screen and (min-width: 1240px){
+  .iteration-grid{
+    margin: 1rem 20rem 4rem 20rem;
   }
 }
