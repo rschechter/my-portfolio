@@ -184,6 +184,10 @@ h1{ /* Hi, I'm Rachel! */
   text-align: left;
 }
 
+span-kern{
+  letter-spacing: -4.5px;
+}
+
 h2{ /* slogan */
   color: #fff;
   font-family: 'Gravity-book', sans-serif;
@@ -291,7 +295,7 @@ a.button{
 }
 
 #fr-section{
-  padding-bottom: 13rem;
+  padding-bottom: 9rem;
 }
 
 .fr-text{
@@ -330,7 +334,22 @@ a.button:hover{
 .desktop-landing{
   display: none;
 }
-
+.db-text{
+  text-align: center;
+}
+.db-text h4{
+  color: #0164E3;
+}
+.db-text a.button{
+  background-color: #0164E3;
+  border: 3px solid #0164E3;
+  margin: 3rem -1rem 1rem 0;
+  text-align: center;
+}
+.db-text a.button:hover{
+  background-color: #fff; 
+  color: #0164E3;
+}
 
                                     /* about page body */
 
@@ -409,7 +428,8 @@ a.button:hover{
 
   #desktop-hero{
     width: 100%;
-  } 
+  }
+  
   
   .cubby-description-2{
   color: #000;
@@ -1224,11 +1244,10 @@ color: #7D00FD;
   background-color: #F0E9FF;
 }
 
-#fr-title{
-  color: #7D00FD;
+#project-title{
   font-family: 'Gravity-book', sans-serif;
   font-size: 5rem;
-  padding: 7rem 0 1.6rem 0;
+  padding: 4rem 0 1.6rem 0;
   text-align: center;
 }
 #fr-desc{
@@ -1378,7 +1397,7 @@ ul li{
   font-size: 1.4rem;
   color: #5A5A5A;
   text-align: center;
-  padding: 2rem;
+  padding: 1.3rem 0 2rem 0;
 }
 
 .sketches-wireframes{
@@ -1611,21 +1630,73 @@ span-red{
 .button-3{
   font-family: 'Gravity-bold', sans-serif;
   font-size: 2rem;
-  color: #14B9B2;
+  color: #BA808C;
   text-decoration: none;
   padding: 1rem 0rem;
 }
 
-body#cubby .button-3{
+/* body#cubby .button-3{
   color: #7D00FD;
-}
+} */
 
 .other-projects{
   padding-bottom: 1.2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 2rem 0;
 }
+ .button-arrow-group{
+   display: flex;
+ }
+
+                      /* Dropbox Redesign */
+
+body#dropbox .logo a,
+body#dropbox .menu-bar li a{
+color: #0164E3;
+}
+
+
+
+.blue-text{
+  color: #0164E3;
+  line-height: 120%;
+}
+
+#dropbox-hero{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#dropbox-desc{
+  padding: 3rem 0 1rem 0;
+}
+.other-blue-back{
+  background-color:#EFECFF
+}
+
+.dropbox-main img{
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.phases{
+  padding: 3rem 0;
+}
+
+#padding-top{
+  padding-top: 3rem;
+}
+#padding-bottom{
+  padding-bottom: 3rem;
+}
+
+.dropbox-concl{
+  padding-top: 4rem;
+}
+
 
 }
 @media screen and (min-width: 510px) {
@@ -1636,6 +1707,10 @@ h1{
   padding-top: 7rem;
 }
 }
+
+/* #dropbox-hero{
+  width: 95%;
+} */
 
 @media screen and (min-width: 768px) {
   
@@ -1670,7 +1745,9 @@ h1{
     padding-top: 10rem;
   }
 
-  body#cubby nav {
+  body#cubby nav,
+  body#familyroom nav,
+  body#dropbox nav{
     position: fixed;
     width: 100%;
     background: rgba(255,255,255, 0.8);
@@ -1753,10 +1830,40 @@ h1{
     width: 100%;
   }
 
+  .db-text{
+    padding-right: 7rem;
+    text-align: center;
+    width: 44%;
+  }
 
+  /* Dropbox MQ */
 
+.blue-text,
+.phases .fr-case-study-text,
+.dropbox-concl .fr-case-study-text{
+    max-width: 735px;
+    margin: 0 auto;
+}
 
+#dropbox-desc{
+  padding: 3rem 0 6rem 0;
+}
 
+.dropbox-main img{
+    width: auto;
+}
+
+#dropbox-hero{
+  padding: 3rem 0;
+}
+
+body#dropbox #project-title{
+  padding-top: 18rem;
+}
+
+.dropbox-concl{
+  padding: 6rem 0;
+}
 /* Family Room MQ */
 
 body#familyroom .fr-case-study-text,
@@ -1775,11 +1882,10 @@ body#familyroom .head-buttons{
   margin: 1rem 35rem 3rem 35rem;
 }
 
-#fr-title{
+#project-title{
   font-size: 6.5rem;
   padding-bottom: 2.2rem;
   padding-top: 18rem;
-
 }
 
 #fr-desc{
@@ -1795,10 +1901,10 @@ body#familyroom .head-buttons{
   padding-bottom: 3rem;
 }
 
-.fr-case-study-text{
+/* .fr-case-study-text{
   margin-left: 34rem;
   width: 75rem;
-}
+} */
 .purple-text,
 .purple-text-title{
   margin-left: 34rem;
@@ -2524,6 +2630,10 @@ ol{
   .sketches-wireframes img{
     width: auto;
     padding-top: 4rem;
+  }
+
+  #dropbox-hero{
+    width: auto;
   }
 }
 
