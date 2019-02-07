@@ -1951,8 +1951,10 @@ body#familyroom .head-buttons{
   width: auto;
 }
 
-
-
+.card .regular-bold-title,
+.personas .regular-bold-title{
+  margin: 0 2rem;
+}
 
 .regular-bold-title{
   /* margin-left: 34rem;
